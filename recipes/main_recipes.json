@@ -1,0 +1,185 @@
+{
+    "recipes": [
+        {
+            "name": "Spaghetti Bolognese",
+            "ingredients": [
+                "spaghetti",
+                "ground beef",
+                "onion",
+                "garlic",
+                "tomato sauce",
+                "olive oil",
+                "salt",
+                "pepper"
+            ],
+            "weight": 5
+        },
+        {
+            "name": "Chicken Curry",
+            "ingredients": [
+                "chicken breast",
+                "curry powder",
+                "coconut milk",
+                "onion",
+                "garlic",
+                "ginger",
+                "salt",
+                "pepper"
+            ],
+            "weight": 2
+        },
+        {
+            "name": "Vegetable Stir Fry",
+            "ingredients": [
+                "broccoli",
+                "carrot",
+                "bell pepper",
+                "soy sauce",
+                "garlic",
+                "ginger",
+                "olive oil",
+                "salt",
+                "pepper"
+            ],
+            "weight": 2
+        },
+        {
+            "name": "Beef Tacos",
+            "ingredients": [
+                "ground beef",
+                "taco seasoning",
+                "tortillas",
+                "lettuce",
+                "tomato",
+                "cheese",
+                "sour cream",
+                "salsa"
+            ],
+            "weight": 3
+        },
+        {
+            "name": "Grilled Cheese Sandwich",
+            "ingredients": [
+                "bread",
+                "cheddar cheese",
+                "butter"
+            ],
+            "weight": 1
+        },
+        {
+            "name": "Caesar Salad",
+            "ingredients": [
+                "romaine lettuce",
+                "croutons",
+                "parmesan cheese",
+                "Caesar dressing",
+                "chicken breast"
+            ],
+            "weight": 2
+        },
+        {
+            "name": "Beef Stew",
+            "ingredients": [
+                "beef",
+                "potatoes",
+                "carrots",
+                "onion",
+                "celery",
+                "beef broth",
+                "tomato paste",
+                "salt",
+                "pepper"
+            ],
+            "weight": 4
+        },
+        {
+            "name": "Pancakes",
+            "ingredients": [
+                "flour",
+                "milk",
+                "egg",
+                "baking powder",
+                "sugar",
+                "salt",
+                "butter",
+                "maple syrup"
+            ],
+            "weight": 1
+        },
+        {
+            "name": "Lasagna",
+            "ingredients": [
+                "lasagna noodles",
+                "ground beef",
+                "ricotta cheese",
+                "mozzarella cheese",
+                "parmesan cheese",
+                "tomato sauce",
+                "onion",
+                "garlic",
+                "olive oil",
+                "salt",
+                "pepper"
+            ],
+            "weight": 5
+        },
+        {
+            "name": "Chicken Alfredo",
+            "ingredients": [
+                "fettuccine",
+                "chicken breast",
+                "heavy cream",
+                "parmesan cheese",
+                "butter",
+                "garlic",
+                "salt",
+                "pepper"
+            ],
+            "weight": 3
+        },
+        {
+            "name": "Minestrone Soup",
+            "ingredients": [
+                "onion",
+                "carrot",
+                "celery",
+                "zucchini",
+                "tomato",
+                "kidney beans",
+                "pasta",
+                "vegetable broth",
+                "olive oil",
+                "salt",
+                "pepper"
+            ],
+            "weight": 2
+        },
+        {
+            "name": "BBQ Chicken Pizza",
+            "ingredients": [
+                "pizza dough",
+                "chicken breast",
+                "BBQ sauce",
+                "mozzarella cheese",
+                "red onion",
+                "cilantro"
+            ],
+            "weight": 4
+        },
+        {
+            "name": "Shrimp Scampi",
+            "ingredients": [
+                "shrimp",
+                "linguine",
+                "garlic",
+                "butter",
+                "lemon juice",
+                "white wine",
+                "parsley",
+                "salt",
+                "pepper"
+            ],
+            "weight": 3
+        }
+    ]
+}
