@@ -11,6 +11,7 @@
                 "1/2 teaspoon salt",
                 "Ground black pepper to taste"
             ],
+            "genre": "General",
             "weight": 3 ,
             "link": "https://ifoodreal.com/baked-chicken-breast/#wprm-recipe-container-39282" ,
             "instructions": [
@@ -36,6 +37,7 @@
                 "10 sprigs fresh thyme (tied with twine)",
                 "0.67 cup sour cream"
             ],
+            "genre": "Russian",
             "weight": 4 ,
             "link": "https://norecipes.com/chicken-stroganoff-recipe/#recipe" ,
             "instructions": [
@@ -76,6 +78,7 @@
                 "Salt and pepper",
                 "4 to 6 pita breads or flat breads to serve"
             ],
+            "genre": "Greek",
             "weight": 3,
             "link": "https://www.recipetineats.com/greek-chicken-gyros-with-tzatziki/#wprm-recipe-container-21826" ,
             "instructions": [
@@ -103,6 +106,7 @@
                 "",
                 ""
             ],
+            "genre": "British",
             "weight": 3 ,
             "link": "https://www.bbcgoodfood.com/recipes/no-fuss-shepherds-pie" ,
             "instructions": [
@@ -129,6 +133,7 @@
                 "",
                 ""
             ],
+            "genre": "Indian",
             "weight": 2 ,
             "link": "https://realfood.tesco.com/recipes/vegan-vegetable-curry.html" ,
             "instructions": [
@@ -155,6 +160,7 @@
                 "",
                 ""
             ],
+            "genre": "Asian",
             "weight": 2 ,
             "link": "https://www.madewithlau.com/recipes/salt-pepper-tofu" ,
             "instructions": [
@@ -181,6 +187,7 @@
                 "",
                 ""
             ],
+            "genre": "Russian",
             "weight": 2 ,
             "link": "https://www.bbcgoodfood.com/recipes/beef-stroganoff" ,
             "instructions": [
@@ -207,6 +214,7 @@
                 "",
                 ""
             ],
+            "genre": "Mexican",
             "weight": 2 ,
             "link": "https://www.howsweeteats.com/2019/01/ground-beef-tacos/" ,
             "instructions": [
@@ -233,6 +241,7 @@
                 "",
                 ""
             ],
+            "genre": "Mexican",
             "weight": 2 ,
             "link": "https://www.bbcgoodfood.com/recipes/easy-chicken-fajitas" ,
             "instructions": [
@@ -259,6 +268,7 @@
                 "",
                 ""
             ],
+            "genre": "Mexican",
             "weight": 2 ,
             "link": "https://www.tamingtwins.com/one-pan-chicken-fajitas/" ,
             "instructions": [
@@ -285,6 +295,7 @@
                 "",
                 ""
             ],
+            "genre": "Mexican",
             "weight": 3 ,
             "link": "https://www.recipetineats.com/pork-carnitas-mexican-slow-cooker-pulled-pork/" ,
             "instructions": [
@@ -311,6 +322,7 @@
                 "",
                 ""
             ],
+            "genre": "Mexican",
             "weight": 2 ,
             "link": "https://www.inspiredtaste.net/3916/pico-de-gallo/" ,
             "instructions": [
@@ -337,6 +349,7 @@
                 "",
                 ""
             ],
+            "genre": "Mexican",
             "weight": 1 ,
             "link": "https://www.bbcgoodfood.com/recipes/best-ever-chunky-guacamole" ,
             "instructions": [
@@ -363,6 +376,7 @@
                 "",
                 ""
             ],
+            "genre": "Asian",
             "weight": 3 ,
             "link": "https://www.foodiebaker.com/asian-style-turkey-pork-meatballs/" ,
             "instructions": [
@@ -389,6 +403,7 @@
                 "",
                 ""
             ],
+            "genre": "Indian",
             "weight": 3 ,
             "link": "https://www.indianhealthyrecipes.com/butter-chicken/" ,
             "instructions": [
@@ -415,6 +430,7 @@
                 "",
                 ""
             ],
+            "genre": "Asian",
             "weight": 3 ,
             "link": "https://www.recipetineats.com/laksa-soup/" ,
             "instructions": [
@@ -441,6 +457,7 @@
                 "",
                 ""
             ],
+            "genre": "Indian",
             "weight": 3 ,
             "link": "https://realfood.tesco.com/recipes/chicken-korma-curry.html" ,
             "instructions": [
@@ -467,6 +484,7 @@
                 "",
                 ""
             ],
+            "genre": "Thai",
             "weight": 3 ,
             "link": "https://www.bbc.co.uk/food/recipes/thaigreencurry_67788" ,
             "instructions": [
@@ -493,6 +511,7 @@
                 "",
                 ""
             ],
+            "genre": "Indian",
             "weight": 3 ,
             "link": "https://www.thedeliciouscrescent.com/keema-curry-recipe/" ,
             "instructions": [
@@ -519,6 +538,7 @@
                 "",
                 ""
             ],
+            "genre": "British",
             "weight": 2 ,
             "link": "https://www.bbcgoodfood.com/recipes/cauliflower-cheese-0" ,
             "instructions": [
@@ -545,6 +565,7 @@
                 "",
                 ""
             ],
+            "genre": "British",
             "weight": 3 ,
             "link": "https://www.bbcgoodfood.com/recipes/glazed-gammon" ,
             "instructions": [
@@ -571,6 +592,7 @@
                 "",
                 ""
             ],
+            "genre": "General",
             "weight": 1 ,
             "link": "https://www.themediterraneandish.com/lemon-garlic-salmon-recipe/" ,
             "instructions": [
@@ -587,7 +609,7 @@
         ]
         },
         {
-            "name": "https://www.inspiredtaste.net/7179/sweet-and-spicy-oven-baked-ribs/",
+            "name": "Easy Fall Off the Bone Oven Baked Ribs",
             "ingredients": [
                 "",
                 "",
@@ -597,8 +619,9 @@
                 "",
                 ""
             ],
+            "genre": "American",
             "weight": 2 ,
-            "link": "Easy Fall Off the Bone Oven Baked Ribs" ,
+            "link": "https://www.inspiredtaste.net/7179/sweet-and-spicy-oven-baked-ribs/" ,
             "instructions": [
                 "1. ", 
                 "2. ", 
@@ -623,6 +646,7 @@
                 "",
                 ""
             ],
+            "genre": "General",
             "weight": 2 ,
             "link": "https://www.dinneratthezoo.com/sweet-potato-fries/" ,
             "instructions": [
@@ -649,6 +673,7 @@
                 "",
                 ""
             ],
+            "genre": "American",
             "weight": 1 ,
             "link": "https://realfood.tesco.com/recipes/one-tray-chicken-wings.html" ,
             "instructions": [
@@ -675,6 +700,7 @@
                 "",
                 ""
             ],
+            "genre": "Italian",
             "weight": 3 ,
             "link": "https://realfood.tesco.com/recipes/chunky-minestrone-soup-with-gnocchi.html" ,
             "instructions": [
@@ -701,6 +727,7 @@
                 "",
                 ""
             ],
+            "genre": "Italian",
             "weight": 3 ,
             "link": "https://realfood.tesco.com/recipes/butter-bean-and-tomato-stew-with-garlic-bread.html" ,
             "instructions": [
@@ -727,6 +754,7 @@
                 "",
                 ""
             ],
+            "genre": "British",
             "weight": 2 ,
             "link": "https://www.bbcgoodfood.com/recipes/pea-ham-soup" ,
             "instructions": [
@@ -753,6 +781,7 @@
                 "",
                 ""
             ],
+            "genre": "Italian",
             "weight": 2 ,
             "link": "https://www.dontgobaconmyheart.co.uk/meatball-pasta-bake/" ,
             "instructions": [
@@ -779,6 +808,7 @@
                 "",
                 ""
             ],
+            "genre": "British",
             "weight": 3 ,
             "link": "https://www.bbcgoodfood.com/recipes/cottage-pie" ,
             "instructions": [
@@ -805,6 +835,7 @@
                 "",
                 ""
             ],
+            "genre": "Irish",
             "weight": 4 ,
             "link": "https://www.recipetineats.com/irish-beef-and-guinness-stew/" ,
             "instructions": [
@@ -831,6 +862,7 @@
                 "",
                 ""
             ],
+            "genre": "General",
             "weight": 3 ,
             "link": "https://www.pressurecookingtoday.com/easy-pressure-cooker-pulled-pork/" ,
             "instructions": [
@@ -857,6 +889,7 @@
                 "",
                 ""
             ],
+            "genre": "General",
             "weight": 1 ,
             "link": "https://www.jocooks.com/recipes/lamb-chops-with-garlic-mint-sauce/" ,
             "instructions": [
@@ -883,6 +916,7 @@
                 "",
                 ""
             ],
+            "genre": "General",
             "weight": 3 ,
             "link": "https://www.pressurecookrecipes.com/instant-pot-pork-shoulder/" ,
             "instructions": [
@@ -909,6 +943,7 @@
                 "",
                 ""
             ],
+            "genre": "British",
             "weight": 3 ,
             "link": "https://www.sugarsaltmagic.com/cheesy-loaded-potato-bake/" ,
             "instructions": [
@@ -935,6 +970,7 @@
                 "",
                 ""
             ],
+            "genre": "French",
             "weight": 2 ,
             "link": "https://www.recipetineats.com/potatoes-au-gratin/" ,
             "instructions": [
@@ -961,6 +997,7 @@
                 "",
                 ""
             ],
+            "genre": "American",
             "weight": 3 ,
             "link": "https://www.thepioneerwoman.com/food-cooking/recipes/a40117958/instant-pot-mac-and-cheese-recipe/" ,
             "instructions": [
@@ -987,6 +1024,7 @@
                 "",
                 ""
             ],
+            "genre": "General",
             "weight": 2 ,
             "link": "https://allthehealthythings.com/garlic-parmesan-chicken-wings/" ,
             "instructions": [
@@ -1013,6 +1051,7 @@
                 "",
                 ""
             ],
+            "genre": "Korean",
             "weight": 2 ,
             "link": "https://mykoreankitchen.com/gochujang-chicken/" ,
             "instructions": [
@@ -1039,6 +1078,7 @@
                 "",
                 ""
             ],
+            "genre": "General",
             "weight": 2 ,
             "link": "https://www.themediterraneandish.com/lemon-garlic-chicken/" ,
             "instructions": [
@@ -1065,6 +1105,7 @@
                 "",
                 ""
             ],
+            "genre": "American",
             "weight": 2 ,
             "link": "https://www.recipetineats.com/oven-baked-barbecue-pork-ribs/" ,
             "instructions": [
@@ -1091,6 +1132,7 @@
                 "",
                 ""
             ],
+            "genre": "Greek",
             "weight": 2 ,
             "link": "https://www.scrambledchefs.com/beetroot-and-feta-cheese-salad/" ,
             "instructions": [
@@ -1117,6 +1159,7 @@
                 "",
                 ""
             ],
+            "genre": "Persian",
             "weight": 2 ,
             "link": "https://tasteandtipple.ca/persian-chicken-wraps/" ,
             "instructions": [
@@ -1143,6 +1186,7 @@
                 "",
                 ""
             ],
+            "genre": "Italian",
             "weight": 3 ,
             "link": "https://www.delish.com/cooking/recipe-ideas/recipes/a57643/mozzarella-stuffed-chicken-parm-recipe/" ,
             "instructions": [
@@ -1169,6 +1213,7 @@
                 "",
                 ""
             ],
+            "genre": "Italian",
             "weight": 3 ,
             "link": "https://tasty.co/recipe/italian-style-bolognese-ragu" ,
             "instructions": [
@@ -1195,6 +1240,7 @@
                 "",
                 ""
             ],
+            "genre": "Italian",
             "weight": 2 ,
             "link": "https://www.thespruceeats.com/mascarpone-and-gorgonzola-pasta-sauce-3377720" ,
             "instructions": [
@@ -1221,6 +1267,7 @@
                 "",
                 ""
             ],
+            "genre": "Italian",
             "weight": 3 ,
             "link": "https://www.spendwithpennies.com/easy-marinara-sauce/" ,
             "instructions": [
@@ -1247,6 +1294,7 @@
                 "",
                 ""
             ],
+            "genre": "Italian",
             "weight": 1 ,
             "link": "https://www.food.com/recipe/orata-al-forno-baked-sea-bream-with-potatoes-184637" ,
             "instructions": [
@@ -1273,6 +1321,7 @@
                 "",
                 ""
             ],
+            "genre": "Italian",
             "weight": 3 ,
             "link": "https://healthyfitnessmeals.com/tuscan-chicken-pasta/" ,
             "instructions": [
@@ -1299,6 +1348,7 @@
                 "",
                 ""
             ],
+            "genre": "Greek",
             "weight": 3 ,
             "link": "https://www.themediterraneandish.com/moussaka-recipe-eggplant-casserole/" ,
             "instructions": [
@@ -1325,6 +1375,7 @@
                 "",
                 ""
             ],
+            "genre": "Greek",
             "weight": 3 ,
             "link": "https://www.mygreekdish.com/recipe/beef-stifado-mosharaki-stifado/" ,
             "instructions": [
@@ -1351,6 +1402,7 @@
                 "",
                 ""
             ],
+            "genre": "Italian",
             "weight": 1 ,
             "link": "https://www.foodandwine.com/recipes/fried-zucchini-spaghetti" ,
             "instructions": [
@@ -1377,6 +1429,7 @@
                 "",
                 ""
             ],
+            "genre": "Italian",
             "weight": 3 ,
             "link": "https://www.recipesfromitaly.com/lasagna-bolognese/" ,
             "instructions": [
@@ -1403,6 +1456,7 @@
                 "",
                 ""
             ],
+            "genre": "Greek",
             "weight": 1 ,
             "link": "https://cafedelites.com/greek-lamb-chops/" ,
             "instructions": [
@@ -1429,6 +1483,7 @@
                 "",
                 ""
             ],
+            "genre": "Italian",
             "weight": 3 ,
             "link": "https://www.olivemagazine.com/recipes/meat-and-poultry/italian-baked-meatballs/" ,
             "instructions": [
@@ -1455,6 +1510,7 @@
                 "",
                 ""
             ],
+            "genre": "Middle East",
             "weight": 2 ,
             "link": "https://www.inspiredtaste.net/15938/easy-and-smooth-hummus-recipe/" ,
             "instructions": [
@@ -1481,6 +1537,7 @@
                 "",
                 ""
             ],
+            "genre": "Italian",
             "weight": 1 ,
             "link": "https://www.recipetineats.com/pizza-toppings/" ,
             "instructions": [
