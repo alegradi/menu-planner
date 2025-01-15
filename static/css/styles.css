@@ -1,0 +1,102 @@
+/* This CSS file will need to be added to the styling of 
+your web pages for the styles to be rendered. */
+
+body {
+background-color: #333;
+color: white;
+}
+.card {
+  margin: 20px auto;
+  max-width: 1200px;
+  min-height: 350px; /* Set a minimum height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}  
+.card {
+  border: 2px solid #ddd;  /* Thinner border */
+  border-radius: 8px;
+  margin-bottom: 40px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Slightly stronger shadow for depth */
+  padding: 20px;  /* Add padding inside the card */
+}
+.card h2 {
+  background-color: #007bff;
+  color: #333;  /* Change font color to dark gray */
+  padding: 15px;
+  border-radius: 8px 8px 0 0;
+  margin: 0;
+}
+.card .genre {
+  font-size: 16px;
+  color: #777;
+  margin: 10px 15px;
+}
+.ingredients, .instructions {
+  padding: 0 15px 15px;
+}
+.ingredients ul, .instructions ol {
+  margin-bottom: 15px;
+}
+.card-link {
+  margin: 15px;
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+}
+.card-link:hover {
+  text-decoration: underline;
+}
+.container {
+  margin-bottom: 2rem;
+}
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  margin-bottom: 2rem;
+  height: 100vh;
+}
+
+a {
+    color: #ffc107;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  color: white;
+  background-color: #333;
+}
+
+.space-above {
+    margin-top: 20px;
+    padding-top: 20px;
+}
+pre {            
+  background-color: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: auto;
+}
+.button-container {
+  display: flex;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  gap: 10px;
+  padding-bottom: 150px; /* Adds space at the bottom of the body */
+}
+.centered-btn {
+  display: block;       /* Make the button a block element */
+  margin: 1.5rem auto;  /* Center the button horizontally and add space above */
+  text-align: center;   /* Align the button's text to the center if needed */
+  margin-right: 10px;
+  width: 100%;
+}

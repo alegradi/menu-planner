@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block title %}A weekly recipes/shopping list creator{% endblock %}
+
+{% block styling%}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+
+  {% for recipe in menu %}
+  <div class="container">
+    <div class="col-10 mx-auto mt-3">
+      <div class="card border-secondary">
+        <div class="card-header">{{ recipe.name }}</div>
+          <div class="card-body text-secondary">
+            <h5 class="card-title">Cuisine: {{ recipe.genre }}</h5>
+            <p class="card-text card-weight">Weight: {{ recipe.weight }}</p>
+            <p class="card-text card-ingredients">
+              <h4>Ingredients:</h4>
+              <ul>
+                  {% for ingredient in recipe.ingredients %}
+                  <li>{{ ingredient }}</li>
+                  {% endfor %}
+              </ul></p>
+            <p class="card-text card-instructions">
+              <h4>Instructions:</h4>
+              <ol>
+                  {% for instruction in recipe.instructions %}
+                  <li>{{ instruction }}</li>
+                  {% endfor %}
+              </ol>
+            </p>
+            <p class="card-text card-link"><a href="{{ recipe.link }}" class="card-link" target="_blank">Full recipe here</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+  <div class="row centered-container col-6 mx-auto mt-3">
+    <div class="col"></div>
+    <div class="button-container col">
+        <a class="btn btn-warning btn-lg centered-btn" href="{{ url_for('home') }}" role="button">
+            Home
+        </a>
+    </div>
+    <div class="button-container col">
+        <a class="btn btn-warning btn-lg centered-btn" href="{{ url_for('make_list') }}" target="_blank" role="button">
+          Shopping list
+        </a>
+    </div>
+    <div class="col"></div>
+  </div>
+
+{% endblock %}
