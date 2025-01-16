@@ -1,13 +1,12 @@
 from flask import Flask, jsonify, render_template, request, flash, redirect, url_for
 from build_menu import build_main_menu
-from flask_bootstrap import Bootstrap5
+from flask_bootstrap import Bootstrap
 import json
 
 
 
 app = Flask(__name__)
-Bootstrap5(app)
-
+Bootstrap(app)
 
 # sample data
 
