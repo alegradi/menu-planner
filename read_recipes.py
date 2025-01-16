@@ -6,7 +6,7 @@ with open('recipes/main_recipes.json', 'r') as file:
 
 with open('recipes/dessert_recipes.json', 'r') as file:
     file_desserts = json.load(file)
-    desserts = file_desserts["desserts"]
+    desserts = file_desserts["recipes"]
 
 # print(main_recipes)
 # print(desserts)

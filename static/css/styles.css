@@ -51,14 +51,6 @@ color: white;
 .container {
   margin-bottom: 2rem;
 }
-.centered-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Full viewport height */
-  margin-bottom: 2rem;
-  height: 100vh;
-}
 
 a {
     color: #ffc107;
@@ -91,7 +83,7 @@ pre {
   width: 100%;
   max-width: 400px;
   gap: 10px;
-  padding-bottom: 150px; /* Adds space at the bottom of the body */
+  padding-bottom: 100px; /* Adds space at the bottom of the body */
 }
 .centered-btn {
   display: block;       /* Make the button a block element */
