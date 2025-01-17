@@ -1,0 +1,31 @@
+{% extends 'bootstrap/base.html' %}
+{% block title %}A weekly recipes/shopping list creator{% endblock %}
+
+{% block styling%}
+{{ super() }}
+{% endblock %}
+
+{% block content %}
+  <div class="jumbotron text-center">
+      <div class="container">
+          <h1 class="display-4">A weekly recipes/shopping list creator</h1>
+          <p class="lead">You have successfully saved a new recipe in json file!</p>
+          <hr class="my-4">
+          <p>Do you want to save another new recipe? or do you want to use the creator?</p>
+          <br>
+          <div class="row justify-content-center mt-3">
+            <div class="col-auto">
+              <a class="btn btn-warning btn-lg" href="{{ url_for('get_recipes')}}" role="button">
+                Give me ideas!
+              </a>
+            </div>
+            <div class="col-auto">
+              <a class="btn btn-warning btn-lg" href="{{ url_for('add_recipes') }}" role="button">
+                Adding new recipes!
+              </a>
+            </div>
+          </div>   
+      </div>
+  </div>
+
+{% endblock %}

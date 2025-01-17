@@ -1,32 +1,6 @@
 {
     "recipes": [
         {
-            "name": "",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "weight": 0 ,
-            "link": "" ,
-            "instructions": [
-                "1. ", 
-                "2. ", 
-                "3. ",
-                "4. ",
-                "5. ",
-                "6. ",
-                "7. ",
-                "8. ",
-                "9. ",
-                "10. "
-        ]
-        },
-        {
             "name": "Baked Chicken Breast",
             "ingredients": [
                 "2 pounds boneless & skinless chicken breasts",
@@ -37,15 +11,16 @@
                 "1/2 teaspoon salt",
                 "Ground black pepper to taste"
             ],
-            "weight": 3 ,
-            "link": "https://ifoodreal.com/baked-chicken-breast/#wprm-recipe-container-39282" ,
+            "cuisine": "General",
+            "weight": 3,
+            "link": "https://ifoodreal.com/baked-chicken-breast/#wprm-recipe-container-39282",
             "instructions": [
-                "1. Preheat oven to 450 degrees F. In a medium baking dish, place chicken breasts, drizzle with oil and sprinkle with smoked paprika, garlic powder, oregano, salt and pepper.", 
-                "2. Using tongs or hands, move chicken around to coat on all sides evenly (I place bottom of breast on top of seasoned one and then swoosh around).", 
-                "3. Bake for 25 minutes (under 2') to 35 minutes (2'+) or until instant read thermometer inserted in the thickest part reads 150 degrees F / 65 C.",
-                "4. Remove chicken breasts from the oven, cover with foil or lid, and let rest for 10 minutes for the juices to settle. Don't skip.",
-                "5. Slice against the grain and serve along any side with a salad. Meal prep for the week, use in salads and casseroles."
-        ]
+                "Preheat oven to 450 degrees F. In a medium baking dish, place chicken breasts, drizzle with oil and sprinkle with smoked paprika, garlic powder, oregano, salt and pepper.",
+                "Using tongs or hands, move chicken around to coat on all sides evenly (I place bottom of breast on top of seasoned one and then swoosh around).",
+                "Bake for 25 minutes (under 2') to 35 minutes (2'+) or until instant read thermometer inserted in the thickest part reads 150 degrees F / 65 C.",
+                "Remove chicken breasts from the oven, cover with foil or lid, and let rest for 10 minutes for the juices to settle. Don't skip.",
+                "Slice against the grain and serve along any side with a salad. Meal prep for the week, use in salads and casseroles."
+            ]
         },
         {
             "name": "Chicken Stroganoff",
@@ -53,7 +28,7 @@
                 "800 grams boneless skinless chicken thighs",
                 "4 tablespoons all-purpose flour",
                 "2 tablespoon cultured unsalted butter",
-                "500 grams button mushrooms (sliced into ¼-inch thick slices)",
+                "500 grams button mushrooms (sliced into \u00bc-inch thick slices)",
                 "350 grams onions (1 small onion, finely diced)",
                 "0.5 cup dry vermouth",
                 "2 cup low sodium chicken stock",
@@ -62,19 +37,20 @@
                 "10 sprigs fresh thyme (tied with twine)",
                 "0.67 cup sour cream"
             ],
-            "weight": 4 ,
-            "link": "https://norecipes.com/chicken-stroganoff-recipe/#recipe" ,
+            "cuisine": "Russian",
+            "weight": 4,
+            "link": "https://norecipes.com/chicken-stroganoff-recipe/#recipe",
             "instructions": [
-                "1. Generously salt and pepper the chicken and then dust with the flour.", 
-                "2. Heat a frying pan over medium-high heat until moderately hot and then melt the butter. Add the chicken in a single layer and let it fry undisturbed until browned on one side (about 5 minutes). Flip and then brown the other side.", 
-                "3. Transfer the chicken to a bowl and then add the mushrooms. Spread the mushrooms into a single layer and sauté on one side until they've started to brown and then flip and brown the second side (about 5 minutes per side). As the mushrooms cook on each side, they will release a lot of liquid. You want to wait until all the liquid evaporates before you continue.",
-                "4. Add the onions and continue sautéing until the both the mushrooms and onions are well browned (another 10 minutes).",
-                "5. Deglaze the pan with the vermouth, boiling until most of the liquid is gone",
-                "6. Add the chicken stock, tomato paste, bay leaf and thyme, and then return the chicken to the pot. Simmer over medium-low heat for 10 minutes covered. Remove the lid and simmer for another 10 minutes or until the chicken is tender and the sauce is thick.",
-                "7. While the chicken is cooking, put the sour cream in a bowl and bring up to room temperature.",
-                "8. When the chicken is done, transfer a few spoonfuls of sauce into the sour cream and stir together and repeat until the sour cream is lukewarm. Pour this mixture back into the pan and stir to combine.",
-                "9. Adjust salt to taste. Serve the Stroganoff with buttered egg noodles or rice."
-        ]
+                "Generously salt and pepper the chicken and then dust with the flour.",
+                "Heat a frying pan over medium-high heat until moderately hot and then melt the butter. Add the chicken in a single layer and let it fry undisturbed until browned on one side (about 5 minutes). Flip and then brown the other side.",
+                "Transfer the chicken to a bowl and then add the mushrooms. Spread the mushrooms into a single layer and saut\u00e9 on one side until they've started to brown and then flip and brown the second side (about 5 minutes per side). As the mushrooms cook on each side, they will release a lot of liquid. You want to wait until all the liquid evaporates before you continue.",
+                "Add the onions and continue saut\u00e9ing until the both the mushrooms and onions are well browned (another 10 minutes).",
+                "Deglaze the pan with the vermouth, boiling until most of the liquid is gone",
+                "Add the chicken stock, tomato paste, bay leaf and thyme, and then return the chicken to the pot. Simmer over medium-low heat for 10 minutes covered. Remove the lid and simmer for another 10 minutes or until the chicken is tender and the sauce is thick.",
+                "While the chicken is cooking, put the sour cream in a bowl and bring up to room temperature.",
+                "When the chicken is done, transfer a few spoonfuls of sauce into the sour cream and stir together and repeat until the sour cream is lukewarm. Pour this mixture back into the pan and stir to combine.",
+                "Adjust salt to taste. Serve the Stroganoff with buttered egg noodles or rice."
+            ]
         },
         {
             "name": "Greek Chicken Gyros recipe",
@@ -88,7 +64,7 @@
                 "1 1/2 tbsp dried oregano",
                 "1 tsp salt",
                 "Black pepper",
-                "2 cucumbers (to make about 1/2 – 3/4 cup grated cucumber after squeezing out juice)",
+                "2 cucumbers (to make about 1/2 ~ 3/4 cup grated cucumber after squeezing out juice)",
                 "1 1/4 cups Greek yoghurt , preferably full fat",
                 "1 tbsp lemon juice",
                 "1 tbsp extra virgin olive oil (or more if you want richer)",
@@ -102,20 +78,1480 @@
                 "Salt and pepper",
                 "4 to 6 pita breads or flat breads to serve"
             ],
+            "cuisine": "Greek",
             "weight": 3,
+            "link": "https://www.recipetineats.com/greek-chicken-gyros-with-tzatziki/#wprm-recipe-container-21826",
             "instructions": [
-                "1. Place the Marinade ingredients in a ziplock bag and massage to mix. Add the chicken into the ziplock bag and massage to cover all the chicken in the Marinade. Marinate for at least 2 hours, preferably 3 hours, ideally 12 hours and no longer than 24 hours.", 
-                "2. Make the Tzatziki: Cut the cucumber in half lengthwise. Use a teaspoon to scrape the watery seeds out. Coarsely grate the cucumber using a box grater. Then wrap in paper towels or a tea towel and squeeze to remove excess liquid.", 
-                "3. Place cucumber in a bowl. Add remaining ingredients then mix to combine. Set aside for at least 20 minutes for the flavours to meld.",
-                "4. Salad: Combine ingredients in a bowl.",
-                "5. Cook Chicken: Brush the outdoor grill with oil, then preheat on medium high. Or heat 1 tbsp of oil in a fry pan over medium high heat.",
-                "6. Remove chicken from Marinade. Cook the chicken for 2 to 3 minutes on each side, until golden brown and cooked through (cooking time depends on size of chicken).",
-                "7. Remove the chicken from the grill / fry pan onto a plate. Cover loosely with foil and allow to rest for 5 minutes before serving.",
-                "8. Assemble Gyros: If your chicken thighs are large, you may need to cut them. Mine were small.",
-                "9. Get a pita bread or flatbread (preferably warmed) and place it on a piece of parchment (baking) paper (or you could use foil). Place some Salad down the middle of the bread, then top with chicken and Tzatziki.",
-                "10. Roll the wrap up, enclosing it with the parchment paper. Twist the end with the excess parchment paper to secure it and cut if desired.",
-                "11. I prefer to lay everything out on a table and let everyone help themselves."
-        ]
+                "Place the Marinade ingredients in a ziplock bag and massage to mix. Add the chicken into the ziplock bag and massage to cover all the chicken in the Marinade. Marinate for at least 2 hours, preferably 3 hours, ideally 12 hours and no longer than 24 hours.",
+                "Make the Tzatziki: Cut the cucumber in half lengthwise. Use a teaspoon to scrape the watery seeds out. Coarsely grate the cucumber using a box grater. Then wrap in paper towels or a tea towel and squeeze to remove excess liquid.",
+                "Place cucumber in a bowl. Add remaining ingredients then mix to combine. Set aside for at least 20 minutes for the flavours to meld.",
+                "Salad: Combine ingredients in a bowl.",
+                "Cook Chicken: Brush the outdoor grill with oil, then preheat on medium high. Or heat 1 tbsp of oil in a fry pan over medium high heat.",
+                "Remove chicken from Marinade. Cook the chicken for 2 to 3 minutes on each side, until golden brown and cooked through (cooking time depends on size of chicken).",
+                "Remove the chicken from the grill / fry pan onto a plate. Cover loosely with foil and allow to rest for 5 minutes before serving.",
+                "Assemble Gyros: If your chicken thighs are large, you may need to cut them. Mine were small.",
+                "Get a pita bread or flatbread (preferably warmed) and place it on a piece of parchment (baking) paper (or you could use foil). Place some Salad down the middle of the bread, then top with chicken and Tzatziki.",
+                "Roll the wrap up, enclosing it with the parchment paper. Twist the end with the excess parchment paper to secure it and cut if desired.",
+                "I prefer to lay everything out on a table and let everyone help themselves."
+            ]
+        },
+        {
+            "name": "No-fuss shepherds pie",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "British",
+            "weight": 3,
+            "link": "https://www.bbcgoodfood.com/recipes/no-fuss-shepherds-pie",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Vegan vegetable curry recipe",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Indian",
+            "weight": 2,
+            "link": "https://realfood.tesco.com/recipes/vegan-vegetable-curry.html",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Salt & Pepper Tofu",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Asian",
+            "weight": 2,
+            "link": "https://www.madewithlau.com/recipes/salt-pepper-tofu",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Beef stroganoff",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Russian",
+            "weight": 2,
+            "link": "https://www.bbcgoodfood.com/recipes/beef-stroganoff",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Ground Beef Tacos",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Mexican",
+            "weight": 2,
+            "link": "https://www.howsweeteats.com/2019/01/ground-beef-tacos/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Easy chicken fajitas",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Mexican",
+            "weight": 2,
+            "link": "https://www.bbcgoodfood.com/recipes/easy-chicken-fajitas",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Easy Chicken Fajitas {Oven Baked}",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Mexican",
+            "weight": 2,
+            "link": "https://www.tamingtwins.com/one-pan-chicken-fajitas/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Carnitas (Mexican Slow Cooker Pulled Pork)",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Mexican",
+            "weight": 3,
+            "link": "https://www.recipetineats.com/pork-carnitas-mexican-slow-cooker-pulled-pork/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Fresh Pico de Gallo",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Mexican",
+            "weight": 2,
+            "link": "https://www.inspiredtaste.net/3916/pico-de-gallo/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Guacamole",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Mexican",
+            "weight": 1,
+            "link": "https://www.bbcgoodfood.com/recipes/best-ever-chunky-guacamole",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Asian-Style Turkey-Pork Meatballs",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Asian",
+            "weight": 3,
+            "link": "https://www.foodiebaker.com/asian-style-turkey-pork-meatballs/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Butter chicken recipe (Indian Chicken Makhani)",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Indian",
+            "weight": 3,
+            "link": "https://www.indianhealthyrecipes.com/butter-chicken/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Laksa Noodle Soup",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Asian",
+            "weight": 3,
+            "link": "https://www.recipetineats.com/laksa-soup/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Chicken korma recipe",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Indian",
+            "weight": 3,
+            "link": "https://realfood.tesco.com/recipes/chicken-korma-curry.html",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Thai green curry",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Thai",
+            "weight": 3,
+            "link": "https://www.bbc.co.uk/food/recipes/thaigreencurry_67788",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Keema (Ground Beef Curry)",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Indian",
+            "weight": 3,
+            "link": "https://www.thedeliciouscrescent.com/keema-curry-recipe/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Cauliflower cheese",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "British",
+            "weight": 2,
+            "link": "https://www.bbcgoodfood.com/recipes/cauliflower-cheese-0",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Honey-glazed ham",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "British",
+            "weight": 3,
+            "link": "https://www.bbcgoodfood.com/recipes/glazed-gammon",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Baked Lemon Garlic Salmon",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "General",
+            "weight": 1,
+            "link": "https://www.themediterraneandish.com/lemon-garlic-salmon-recipe/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Easy Fall Off the Bone Oven Baked Ribs",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "American",
+            "weight": 2,
+            "link": "https://www.inspiredtaste.net/7179/sweet-and-spicy-oven-baked-ribs/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Sweet Potato Fries (Baked or Fried!)",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "General",
+            "weight": 2,
+            "link": "https://www.dinneratthezoo.com/sweet-potato-fries/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "One-tray chicken wings recipe",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "American",
+            "weight": 1,
+            "link": "https://realfood.tesco.com/recipes/one-tray-chicken-wings.html",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Chunky minestrone soup with gnocchi",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Italian",
+            "weight": 3,
+            "link": "https://realfood.tesco.com/recipes/chunky-minestrone-soup-with-gnocchi.html",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Butter bean and tomato stew with garlic bread",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Italian",
+            "weight": 3,
+            "link": "https://realfood.tesco.com/recipes/butter-bean-and-tomato-stew-with-garlic-bread.html",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Pea & ham soup",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "British",
+            "weight": 2,
+            "link": "https://www.bbcgoodfood.com/recipes/pea-ham-soup",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Meatball Pasta Bake",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Italian",
+            "weight": 2,
+            "link": "https://www.dontgobaconmyheart.co.uk/meatball-pasta-bake/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Cottage pie",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "British",
+            "weight": 3,
+            "link": "https://www.bbcgoodfood.com/recipes/cottage-pie",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Irish Beef and Guinness Stew",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Irish",
+            "weight": 4,
+            "link": "https://www.recipetineats.com/irish-beef-and-guinness-stew/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Easy Pressure Cooker Pulled Pork",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "General",
+            "weight": 3,
+            "link": "https://www.pressurecookingtoday.com/easy-pressure-cooker-pulled-pork/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Lamb Chops with Garlic Mint Sauce",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "General",
+            "weight": 1,
+            "link": "https://www.jocooks.com/recipes/lamb-chops-with-garlic-mint-sauce/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Instant Pot Pork Shoulder",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "General",
+            "weight": 3,
+            "link": "https://www.pressurecookrecipes.com/instant-pot-pork-shoulder/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Cheesy Potato Bake",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "British",
+            "weight": 3,
+            "link": "https://www.sugarsaltmagic.com/cheesy-loaded-potato-bake/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Potatoes au Gratin (Dauphinoise)",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "French",
+            "weight": 2,
+            "link": "https://www.recipetineats.com/potatoes-au-gratin/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Instant Pot Mac and Cheese",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "American",
+            "weight": 3,
+            "link": "https://www.thepioneerwoman.com/food-cooking/recipes/a40117958/instant-pot-mac-and-cheese-recipe/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Garlic Parmesan Chicken Wings",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "General",
+            "weight": 2,
+            "link": "https://allthehealthythings.com/garlic-parmesan-chicken-wings/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Grilled Gochujang Chicken",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Korean",
+            "weight": 2,
+            "link": "https://mykoreankitchen.com/gochujang-chicken/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Lemon Garlic Chicken",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "General",
+            "weight": 2,
+            "link": "https://www.themediterraneandish.com/lemon-garlic-chicken/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Oven Pork Ribs with Barbecue Sauce",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "American",
+            "weight": 2,
+            "link": "https://www.recipetineats.com/oven-baked-barbecue-pork-ribs/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Beetroot and Feta Cheese Salad",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Greek",
+            "weight": 2,
+            "link": "https://www.scrambledchefs.com/beetroot-and-feta-cheese-salad/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Persian Chicken Wraps",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Persian",
+            "weight": 2,
+            "link": "https://tasteandtipple.ca/persian-chicken-wraps/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Mozzarella-Stuffed Chicken Parm",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Italian",
+            "weight": 3,
+            "link": "https://www.delish.com/cooking/recipe-ideas/recipes/a57643/mozzarella-stuffed-chicken-parm-recipe/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Italian-Style Bolognese (Rag\u00f9)",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Italian",
+            "weight": 3,
+            "link": "https://tasty.co/recipe/italian-style-bolognese-ragu",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Mascarpone and Gorgonzola Pasta Sauce Recipe",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Italian",
+            "weight": 2,
+            "link": "https://www.thespruceeats.com/mascarpone-and-gorgonzola-pasta-sauce-3377720",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Easy Marinara Sauce",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Italian",
+            "weight": 3,
+            "link": "https://www.spendwithpennies.com/easy-marinara-sauce/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Orata Al Forno (Baked Sea Bream With Potatoes)",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Italian",
+            "weight": 1,
+            "link": "https://www.food.com/recipe/orata-al-forno-baked-sea-bream-with-potatoes-184637",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Creamy Tuscan Chicken Pasta",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Italian",
+            "weight": 3,
+            "link": "https://healthyfitnessmeals.com/tuscan-chicken-pasta/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Greek Moussaka Recipe: Eggplant Casserole",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Greek",
+            "weight": 3,
+            "link": "https://www.themediterraneandish.com/moussaka-recipe-eggplant-casserole/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Beef Stifado recipe (Greek beef stew)",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Greek",
+            "weight": 3,
+            "link": "https://www.mygreekdish.com/recipe/beef-stifado-mosharaki-stifado/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Fried Zucchini Spaghetti",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Italian",
+            "weight": 1,
+            "link": "https://www.foodandwine.com/recipes/fried-zucchini-spaghetti",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Authentic Italian Lasagna Bolognese",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Italian",
+            "weight": 3,
+            "link": "https://www.recipesfromitaly.com/lasagna-bolognese/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Greek Lamb Chops",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Greek",
+            "weight": 1,
+            "link": "https://cafedelites.com/greek-lamb-chops/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Italian baked meatballs",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Italian",
+            "weight": 3,
+            "link": "https://www.olivemagazine.com/recipes/meat-and-poultry/italian-baked-meatballs/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Easy Hummus",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Middle East",
+            "weight": 2,
+            "link": "https://www.inspiredtaste.net/15938/easy-and-smooth-hummus-recipe/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "name": "Pizza toppings",
+            "ingredients": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "cuisine": "Italian",
+            "weight": 1,
+            "link": "https://www.recipetineats.com/pizza-toppings/",
+            "instructions": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
         }
     ]
 }

@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% block title %}A weekly recipes/shopping list creator{% endblock %}
+
+{% block styling%}
+{{ super() }}
+{% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+        <div class="container">
+            <div class="form-container mt-5">
+                <h2 class="form-heading text-center">Create a Recipe</h2>
+                <form method="POST" action="/adding">
+                    <!-- Genre (Main or Dessert) Dropdown -->
+                    <div class="form-group">
+                        <label for="genre">Genre:</label>
+                        <select class="form-control" id="genre" name="genre" required>
+                            <option value="main">Main</option>
+                            <option value="dessert">Dessert</option>
+                        </select>
+                    </div>
+                    <!-- Recipe Name -->
+                    <div class="form-group">
+                        <label for="name">Recipe Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter the recipe name" required />
+                    </div>
+                    <!-- Weight -->
+                    <div class="form-group">
+                        <label for="weight">Weight (How many days food can last):</label>
+                        <input type="number" class="form-control" id="weight" placeholder="Enter weight" name="weight" required />
+                    </div>
+                    <!-- Ingredients -->
+                    <div class="form-group">
+                        <label for="ingredients">Ingredients (add each on a new line):</label>
+                        <textarea class="form-control" id="ingredients" name="ingredients" rows="4" placeholder="e.g., tomatoes, cheese, pasta" required></textarea>
+                    </div>
+                    <!-- cuisine -->
+                    <div class="form-group">
+                        <label for="cuisine">Cuisine (e.g., Japanese, Hungarian etc):</label>
+                        <input type="text" class="form-control" id="cuisine" name="cuisine" placeholder="Enter the cuisine" required>
+                    </div>
+                    <!-- Recipe Link -->
+                    <div class="form-group">
+                        <label for="link">Recipe Link (optional):</label>
+                        <input type="url" class="form-control" id="link" name="link" placeholder="e.g., http://recipe-link.com">
+                    </div>
+                    <!-- Instructions -->
+                    <div class="form-group">
+                        <label for="instructions">Instructions (add each step on a new line):</label>
+                        <textarea class="form-control" id="instructions" name="instructions" rows="7" placeholder="e.g., Boil water, Mix ingredients" required></textarea>
+                    </div>
+                    <!-- Submit Button -->
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-warning btn-lg centered-btn">Submit Recipe</button>
+                    </div>
+                    <br>
+                    <!-- Adding buttons leading to 'home' and 'add recipes' pages-->
+                    <div class="row justify-content-center mt-3">
+                        <div class="col-auto">
+                            <a class="btn btn-warning btn-lg" href="{{ url_for('home') }}" role="button">
+                            Home
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                        <a class="btn btn-warning btn-lg" href="{{ url_for('get_recipes')}}" role="button">
+                            Get a list of recipes
+                        </a>
+                        </div>
+                    </div>  
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
