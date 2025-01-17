@@ -76,7 +76,7 @@ def add_recipes():
         "name": request.form['name'],
         "ingredients": [ingredient.strip() for ingredient in request.form['ingredients'].splitlines() if ingredient.strip()],
         "cuisine": request.form['cuisine'],
-        "weight": float(request.form['weight']),
+        "weight": int(request.form['weight']),
         "link": request.form['link'],
         "instructions": [instruction.strip() for instruction in request.form['instructions'].splitlines() if instruction.strip()]
     }
