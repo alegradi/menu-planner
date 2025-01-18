@@ -1,9 +1,8 @@
+import json
 from flask import Flask, jsonify, render_template, request, flash, redirect, url_for
 from build_menu import build_main_menu
 from save_recipe import save_recipe
 from flask_bootstrap import Bootstrap
-import json
-
 
 
 app = Flask(__name__)
