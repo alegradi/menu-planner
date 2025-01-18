@@ -1,10 +1,23 @@
 import json
 
+"""
+save_recipe.py
+
+Purpose is to save the contain any code relevant to saving recipes
+"""
+
 MAIN_RECIPES = './recipes/main_recipes.json'
 DESSERT_RECIPES = './recipes/dessert_recipes.json'
 
 # Function to save new recipe to the JSON file
 def save_recipe(recipe):
+    """
+    Save entries from the add_recipes function to a file
+    Args:
+        recipe (dictionary) by add_recipes
+    Returns:
+        Appends recipe to MAIN_RECIPES or DESSERT_RECIPES file
+    """
     if recipe['genre'].lower() == 'dessert':
         file_to_save = DESSERT_RECIPES
     else:
