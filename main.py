@@ -43,6 +43,17 @@ def make_list():
         shopping_list.extend(recipe['ingredients'])
     return render_template('shopping_list.html', shopping_list=shopping_list)
 
+def process_webform(webform_text):
+    """
+    Processes a multi-line string of webform text.
+    Args:
+        webform_text (str): A string containing items separated by new lines.
+    Returns:
+        list: A list of cleaned, non-empty webform strings.
+    """
+    return [webform_text.strip() for webform_text in webform_text.splitlines() 
+            if webform_text.strip()]
+
 @app.route('/adding', methods=['GET', 'POST'])
 def add_recipes():
     if request.method == 'POST':
@@ -50,11 +61,11 @@ def add_recipes():
         recipe = {
         "genre": request.form['genre'],
         "name": request.form['name'],
-        "ingredients": [ingredient.strip() for ingredient in request.form['ingredients'].splitlines() if ingredient.strip()],
+        "ingredients": process_webform(request.form['ingredients']),
         "cuisine": request.form['cuisine'],
         "weight": int(request.form['weight']),
         "link": request.form['link'],
-        "instructions": [instruction.strip() for instruction in request.form['instructions'].splitlines() if instruction.strip()]
+        "instructions": process_webform(request.form['instructions'])
     }
 
         save_recipe(recipe)
