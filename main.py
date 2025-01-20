@@ -56,7 +56,7 @@ def get_recipes():
     Returns:
         HTML response of built menu
     """
-    global food_menu
+    global food_menu    # pylint: disable=global-statement
     food_menu = build_main_menu()
     return render_template('recipes.html', menu=food_menu)
 
