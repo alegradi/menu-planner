@@ -1,7 +1,6 @@
 import json
 
-"""
-read_recipes.py
+"""read_recipes.py
 
 Purpose is to read in recipes to be used by other functions
 """
