@@ -1552,6 +1552,24 @@
                 "",
                 ""
             ]
+        },
+        {
+            "genre": "main",
+            "name": "Kaho Legradi",
+            "ingredients": [
+                "tomato",
+                "cheese",
+                "ham",
+                "wrap"
+            ],
+            "cuisine": "Japanese",
+            "weight": 1.0,
+            "link": "",
+            "instructions": [
+                "deep fry Kaho Legradi",
+                "roll her in a wrap with tomato, cheese and ham",
+                "eat it!"
+            ]
         }
     ]
 }
