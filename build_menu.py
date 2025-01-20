@@ -1,9 +1,15 @@
+"""build_meny.py
+
+Build the menu here
+"""
+
 import random
 from read_recipes import main_recipes
 from read_recipes import desserts
-import json
 
 def build_main_menu():
+    """Build the menu by selecting random recipes from
+    main, plus a random dessert"""
     main_menu = []
     total_weight = 0
 
