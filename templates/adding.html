@@ -30,10 +30,15 @@
                         <input type="number" class="form-control" id="weight" placeholder="Enter weight" name="weight" required />
                     </div>
                     <!-- Ingredients -->
-                    <div class="form-group">
-                        <label for="ingredients">Ingredients (add each on a new line):</label>
-                        <textarea class="form-control" id="ingredients" name="ingredients" rows="4" placeholder="e.g., tomatoes, cheese, pasta" required></textarea>
+                    <div class="form-group" id="ingredients-section">
+                        <label for="ingredients">Ingredients:</label>
+                        <div class="ingredient-group">
+                            <input type="number" class="form-control ingredient-quantity" placeholder="Quantity" name="ingredients[0][quantity]" required />
+                            <input type="text" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[0][name]" required />
+                        </div>
                     </div>
+                    <button type="button" id="add-ingredient" class="btn btn-primary">Add another ingredient</button>
+                    <br><br>
                     <!-- cuisine -->
                     <div class="form-group">
                         <label for="cuisine">Cuisine (e.g., Japanese, Hungarian etc):</label>
@@ -71,5 +76,40 @@
             </div>
         </div>
     </div>
+    <script>
+        // JavaScript to add more ingredient fields dynamically
+        let ingredientIndex = 1;
 
+        document.getElementById('add-ingredient').addEventListener('click', function () {
+            // Create new fields for ingredient name and quantity
+            let newIngredientGroup = document.createElement('div');
+            newIngredientGroup.classList.add('ingredient-group');
+            
+            let newNameInput = document.createElement('input');
+            newNameInput.type = 'text';
+            newNameInput.classList.add('form-control');
+            newNameInput.classList.add('ingredient-name');
+            newNameInput.placeholder = 'Ingredient name';
+            newNameInput.name = `ingredients[${ingredientIndex}][name]`;
+            newNameInput.required = true;
+
+            let newQuantityInput = document.createElement('input');
+            newQuantityInput.type = 'number';
+            newQuantityInput.classList.add('form-control');
+            newQuantityInput.classList.add('ingredient-quantity');
+            newQuantityInput.placeholder = 'Quantity';
+            newQuantityInput.name = `ingredients[${ingredientIndex}][quantity]`;
+            newQuantityInput.required = true;
+
+            // Append inputs to the new ingredient group
+            newIngredientGroup.appendChild(newNameInput);
+            newIngredientGroup.appendChild(newQuantityInput);
+
+            // Add the new ingredient group to the form
+            document.getElementById('ingredients-section').appendChild(newIngredientGroup);
+
+            // Increment the ingredient index for the next one
+            ingredientIndex++;
+        });
+    </script>
 {% endblock %}
