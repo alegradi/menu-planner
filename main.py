@@ -117,7 +117,7 @@ def add_recipes():
             list_ingredients.append({'quantity': ingredient_quantity, 'name': ingredient_name})
             index += 1
 
-        print("Final ingredient list:", list_ingredients)
+        # print("Final ingredient list:", list_ingredients)
 
         
         # Create the recipe dictionary as per the required format
