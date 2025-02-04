@@ -38,29 +38,26 @@ def get_recipes():
 
 @app.route('/shopping_list')
 def make_list():
-    shopping_list = {}
-    if not global_menu:
-        print("Global menu is empty!")
-    
-    # Go through each recipe in the global_menu
+    shopping_dict = {}  # Dictionary to track quantities per ingredient
+
     for recipe in global_menu:
-        # For each ingredient in the recipe
         for ingredient in recipe['ingredients']:
-            ingredient_name = ingredient['name']
-            ingredient_quantity = ingredient['quantity']
+            if ingredient:
+                ingredient_name = ingredient['name']
+                ingredient_quantity = ingredient['quantity']
 
-            # Combine quantities for the same ingredient
-            if ingredient_name in shopping_list:
-                shopping_list[ingredient_name] += ingredient_quantity
-            else:
-                shopping_list[ingredient_name] = ingredient_quantity
+                # If ingredient already exists, add to quantity
+                if ingredient_name in shopping_dict:
+                    shopping_dict[ingredient_name] += ingredient_quantity
+                else:
+                    shopping_dict[ingredient_name] = ingredient_quantity
 
-    # Convert the shopping_list dictionary to a list of dictionaries for display
-    shopping_list = [{'name': name, 'quantity': quantity} for name, quantity in shopping_list.items()]
+    # Convert dictionary back to list of dictionaries
+    shopping_list = [{"name": name, "quantity": quantity} for name, quantity in shopping_dict.items()]
 
-    print(shopping_list)
-    return render_template('shopping_list.html', shopping_list=shopping_list)
-
+    print("Final Shopping List:", shopping_list)
+    return render_template("shopping_list.html", shopping_list=shopping_list)
+   
 @app.route('/adding', methods=['GET', 'POST'])
 def add_recipes():
     if request.method == 'POST':
