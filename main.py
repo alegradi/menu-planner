@@ -5,7 +5,6 @@ from flask_bootstrap import Bootstrap
 import json
 
 
-
 app = Flask(__name__)
 Bootstrap(app)
 
@@ -39,19 +38,48 @@ def get_recipes():
 
 @app.route('/shopping_list')
 def make_list():
-    shopping_list = []
-    for recipe in global_menu:
-        shopping_list.extend(recipe['ingredients'])
-    return render_template('shopping_list.html', shopping_list=shopping_list)
+    shopping_dict = {}  # Dictionary to track quantities per ingredient
 
+    for recipe in global_menu:
+        for ingredient in recipe['ingredients']:
+            if ingredient:
+                ingredient_name = ingredient['name']
+                ingredient_quantity = ingredient['quantity']
+
+                # If ingredient already exists, add to quantity
+                if ingredient_name in shopping_dict:
+                    shopping_dict[ingredient_name] += ingredient_quantity
+                else:
+                    shopping_dict[ingredient_name] = ingredient_quantity
+
+    # Convert dictionary back to list of dictionaries
+    shopping_list = [{"name": name, "quantity": quantity} for name, quantity in shopping_dict.items()]
+
+    print("Final Shopping List:", shopping_list)
+    return render_template("shopping_list.html", shopping_list=shopping_list)
+   
 @app.route('/adding', methods=['GET', 'POST'])
 def add_recipes():
     if request.method == 'POST':
+        list_ingredients = []
+
+        index = 0
+        while f'ingredients[{index}][quantity]' in request.form:
+            # Extracting ingredient data
+            ingredient_quantity = request.form.get(f'ingredients[{index}][quantity]')
+            ingredient_name = request.form.get(f'ingredients[{index}][name]')
+
+            list_ingredients.append({'quantity': ingredient_quantity, 'name': ingredient_name})
+            index += 1
+
+        print("Final ingredient list:", list_ingredients)
+
+        
         # Create the recipe dictionary as per the required format
         recipe = {
         "genre": request.form['genre'],
         "name": request.form['name'],
-        "ingredients": [ingredient.strip() for ingredient in request.form['ingredients'].splitlines() if ingredient.strip()],
+        "ingredients": list_ingredients,
         "cuisine": request.form['cuisine'],
         "weight": int(request.form['weight']),
         "link": request.form['link'],

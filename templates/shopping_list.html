@@ -14,7 +14,7 @@
                 <h1>Shopping List</h1>
                 <ol class="list-group">
                 {% for item in shopping_list %}
-                <li class="list-group-item">{{ item }}</li>
+                <li class="list-group-item">{{ item.quantity }} {{ item.name }}</li>
                 {% endfor %}
                 </ol>
             </div>

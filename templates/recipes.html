@@ -1,3 +1,4 @@
+
 {% extends 'base.html' %}
 {% block title %}A weekly recipes/shopping list creator{% endblock %}
 
@@ -19,7 +20,7 @@
               <h4>Ingredients:</h4>
               <ul>
                   {% for ingredient in recipe.ingredients %}
-                  <li>{{ ingredient }}</li>
+                  <li>{{ ingredient.quantity }} {{ ingredient.name }}</li>
                   {% endfor %}
               </ul></p>
             <p class="card-text card-instructions">
