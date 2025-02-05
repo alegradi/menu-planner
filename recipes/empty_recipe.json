@@ -1,20 +1,41 @@
 {
     "name": "",
     "ingredients": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        {
+            "quantity": 0,
+            "name": ""
+        },
+        {
+            "quantity": 0,
+            "name": ""
+        },
+        {
+            "quantity": 0,
+            "name": ""
+        },
+        {
+            "quantity": 0,
+            "name": ""
+        },
+        {
+            "quantity": 0,
+            "name": ""
+        },
+        {
+            "quantity": 0,
+            "name": ""
+        },
+        {
+            "quantity": 0,
+            "name": ""
+        }
     ],
     "genre": "",
     "weight": 0 ,
     "link": "" ,
     "instructions": [
-        "", 
-        "", 
+        "",
+        "",
         "",
         "",
         "",
