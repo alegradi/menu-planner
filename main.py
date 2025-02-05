@@ -81,11 +81,11 @@ def make_list():
                 else:
                     shopping_dict[ingredient_name] = ingredient_quantity
     # Convert dictionary back to list of dictionaries
-    shopping_list = [{"name": name, "quantity": quantity} 
-                     for name, quantity in shopping_dict.items()]    
+    shopping_list = [{"name": name, "quantity": quantity}
+                     for name, quantity in shopping_dict.items()]
     print("Final Shopping List:", shopping_list)
     return render_template("shopping_list.html", shopping_list=shopping_list)
-   
+
 def process_webform(webform_text):
     """
     Processes a multi-line string of webform text.
@@ -113,7 +113,7 @@ def add_recipes():
             ingredient_quantity = request.form.get(f'ingredients[{index}][quantity]')
             ingredient_name = request.form.get(f'ingredients[{index}][name]')
             list_ingredients.append({'quantity': ingredient_quantity, 'name': ingredient_name})
-            index += 1      
+            index += 1
         # Create the recipe dictionary as per the required format
         recipe = {
         "genre": request.form['genre'],
