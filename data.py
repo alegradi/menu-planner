@@ -1,3 +1,7 @@
+"""
+categories for sorting items in shopping list to sophisticate the shopping_list
+"""
+
 # List of Vegetables (UK supermarkets)
 vegetables = [
     "Carrot", "Broccoli", "Spinach", "Lettuce", "Potato",
