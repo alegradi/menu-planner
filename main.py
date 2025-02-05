@@ -83,8 +83,7 @@ def make_list():
 
     # Convert dictionary back to list of dictionaries
     shopping_list = [{"name": name, "quantity": quantity} 
-                     for name, quantity in shopping_dict.items()]
-
+                     for name, quantity in shopping_dict.items()]    
     print("Final Shopping List:", shopping_list)
     return render_template("shopping_list.html", shopping_list=shopping_list)
    
@@ -116,8 +115,7 @@ def add_recipes():
             ingredient_name = request.form.get(f'ingredients[{index}][name]')
 
             list_ingredients.append({'quantity': ingredient_quantity, 'name': ingredient_name})
-            index += 1
-      
+            index += 1      
         # Create the recipe dictionary as per the required format
         recipe = {
         "genre": request.form['genre'],
@@ -147,4 +145,3 @@ def successful():
 
 if __name__ == '__main__':
     app.run(debug=True)
-    
