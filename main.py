@@ -80,7 +80,6 @@ def make_list():
                     shopping_dict[ingredient_name] += ingredient_quantity
                 else:
                     shopping_dict[ingredient_name] = ingredient_quantity
-
     # Convert dictionary back to list of dictionaries
     shopping_list = [{"name": name, "quantity": quantity} 
                      for name, quantity in shopping_dict.items()]    
@@ -113,7 +112,6 @@ def add_recipes():
             # Extracting ingredient data
             ingredient_quantity = request.form.get(f'ingredients[{index}][quantity]')
             ingredient_name = request.form.get(f'ingredients[{index}][name]')
-
             list_ingredients.append({'quantity': ingredient_quantity, 'name': ingredient_name})
             index += 1      
         # Create the recipe dictionary as per the required format
@@ -126,11 +124,8 @@ def add_recipes():
         "link": request.form['link'],
         "instructions": process_webform(request.form['instructions'])
     }
-
         save_recipe(recipe)
-
         return redirect(url_for('successful'))
-
     return render_template('adding.html')
 
 @app.route('/successful')
