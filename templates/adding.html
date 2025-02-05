@@ -32,9 +32,25 @@
                     <!-- Ingredients -->
                     <div class="form-group" id="ingredients-section">
                         <label for="ingredients">Ingredients:</label>
-                        <div class="ingredient-group">
-                            <input type="number" class="form-control ingredient-quantity" placeholder="Quantity" name="ingredients[0][quantity]" required />
-                            <input type="text" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[0][name]" required />
+                        <div class="ingredient-group input-container">
+                            <input type="number" id="quantity-0" class="form-control ingredient-quantity" placeholder="Quantity" name="ingredients[0][quantity]" required />
+                            <input type="text" id="name-0" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[0][name]" required />
+                        </div>
+                        <div class="ingredient-group input-container">
+                            <input type="number" id="quantity-1" class="form-control ingredient-quantity" placeholder="Quantity" name="ingredients[0][quantity]" required />
+                            <input type="text" id="name-1" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[0][name]" required />
+                        </div>
+                        <div class="ingredient-group input-container">
+                            <input type="number" id="quantity-2" class="form-control ingredient-quantity" placeholder="Quantity" name="ingredients[0][quantity]" required />
+                            <input type="text" id="name-2" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[0][name]" required />
+                        </div>
+                        <div class="ingredient-group input-container">
+                            <input type="number" id="quantity-3" class="form-control ingredient-quantity" placeholder="Quantity" name="ingredients[0][quantity]" required />
+                            <input type="text" id="name-3" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[0][name]" required />
+                        </div>
+                        <div class="ingredient-group input-container">
+                            <input type="number" id="quantity-4" class="form-control ingredient-quantity" placeholder="Quantity" name="ingredients[0][quantity]" required />
+                            <input type="text" id="name-4" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[0][name]" required />
                         </div>
                     </div>
                     <button type="button" id="add-ingredient" class="btn btn-primary">Add another ingredient</button>
@@ -71,7 +87,7 @@
                             Get a list of recipes
                         </a>
                         </div>
-                    </div>  
+                    </div>
                 </form>
             </div>
         </div>
@@ -83,7 +99,7 @@
         document.getElementById('add-ingredient').addEventListener('click', function () {
             // Create new fields for ingredient name and quantity
             let newIngredientGroup = document.createElement('div');
-            newIngredientGroup.classList.add('ingredient-group');
+            newIngredientGroup.classList.add('ingredient-group', 'input-container');
 
             let newQuantityInput = document.createElement('input');
             newQuantityInput.type = 'number';
@@ -92,7 +108,7 @@
             newQuantityInput.placeholder = 'Quantity';
             newQuantityInput.name = `ingredients[${ingredientIndex}][quantity]`;
             newQuantityInput.required = true;
-            
+
             let newNameInput = document.createElement('input');
             newNameInput.type = 'text';
             newNameInput.classList.add('form-control');

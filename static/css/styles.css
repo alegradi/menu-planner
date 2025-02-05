@@ -1,9 +1,11 @@
-/* This CSS file will need to be added to the styling of 
+/* This CSS file will need to be added to the styling of
 your web pages for the styles to be rendered. */
 
-body {
-background-color: #333;
-color: white;
+html, body {
+  background-color: #333;
+  color: white;
+  margin: 0;
+  overflow-y: auto; /* Allow scrolling */
 }
 .card {
   margin: 20px auto;
@@ -12,7 +14,7 @@ color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}  
+}
 .card {
   border: 2px solid #ddd;  /* Thinner border */
   border-radius: 8px;
@@ -63,7 +65,7 @@ a {
   display: flex;
   align-items: center;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   color: white;
   background-color: #333;
 }
@@ -72,7 +74,7 @@ a {
     margin-top: 20px;
     padding-top: 20px;
 }
-pre {            
+pre {
   background-color: #f4f4f4;
   padding: 10px;
   border: 1px solid #ddd;
@@ -94,4 +96,26 @@ pre {
   text-align: center;   /* Align the button's text to the center if needed */
   margin-right: 10px;
   width: 100%;
+}
+.input-container {
+  display: flex;
+  width: 100%; /* Ensure container takes full width */
+}
+.input-container input {
+  padding: 5px;
+  display: flex;
+  width: 100%
+}
+.ingredient-quantity {
+  flex: 1; /* This gives 1/4 of the space */
+}
+.ingredient-name {
+  flex: 8; /* This gives 3/4 of the space */
+}
+#ingredients-section {
+  display: 400px;
+  overflow-y: auto;
+}
+*{
+  box-sizing: border-box;
 }
