@@ -8,6 +8,7 @@ env/
 ENV/
 .venv/
 .ENV/
+*.env
 
 # Ignore IDE/editor specific files
 .vscode/
