@@ -99,10 +99,12 @@ def search_recipe():
         name = form.recipe_name.data
         genre = form.genre.data
         file_path = None
+
         if genre == "main":
             file_path = 'recipes/main_recipes.json'
         elif genre == "dessert":
             file_path = 'recipes/dessert_recipes.json'
+
         with open(file_path, 'r', encoding='utf-8') as file:
             data = json.load(file)
             recipes = data["recipes"]
@@ -113,8 +115,7 @@ def search_recipe():
                 break
 
         return render_template('search_result.html', recipe=search_item)
-    else:
-        return render_template('search.html', form=form)
+    return render_template('search.html', form=form)
 
 @app.route('/delete', methods=['POST','GET'])
 def delete():
@@ -148,15 +149,15 @@ def delete():
             if name.lower() == i["name"].lower():
                 recipe_to_delete = i
                 break
-        # check if the recipe which user is looking for is in json file
+        # check if the recipe is in json file
         if not recipe_to_delete:
             flash(f"Recipe '{name}' not found!", "error")
             return redirect(url_for('delete'))
-
-        # If the "Search" button was clicked
-        if request.form.get('search') == 'search':
-            return render_template('delete.html', form=form,
-                                   recipe_to_delete=recipe_to_delete)
+        else:
+            # If the "Search" button was clicked
+            if request.form.get('search') == 'search':
+                return render_template('delete.html', form=form,
+                                    recipe_to_delete=recipe_to_delete)
 
         name = recipe_to_delete['name']
 
