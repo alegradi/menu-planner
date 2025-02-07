@@ -115,6 +115,7 @@ def search_recipe():
                 break
 
         return render_template('search_result.html', recipe=search_item)
+
     return render_template('search.html', form=form)
 
 @app.route('/delete', methods=['POST','GET'])
@@ -153,10 +154,9 @@ def delete():
         if not recipe_to_delete:
             flash(f"Recipe '{name}' not found!", "error")
             return redirect(url_for('delete'))
-        else:
-            # If the "Search" button was clicked
-            if request.form.get('search') == 'search':
-                return render_template('delete.html', form=form,
+        # If the "Search" button was clicked
+        if request.form.get('search') == 'search':
+            return render_template('delete.html', form=form,
                                     recipe_to_delete=recipe_to_delete)
 
         name = recipe_to_delete['name']
@@ -174,13 +174,13 @@ def delete():
                   f"Recipe '{recipe_to_delete['name']}' has been successfully deleted.",
                   category="success")
             return redirect(url_for('home'))
-        else:
-            # this is the page when user searched for a certain recipe after opening /delete
-            return render_template('delete.html', form=form,
+
+        # this is the page when user searched for a certain recipe after opening /delete
+        return render_template('delete.html', form=form,
                                    recipe_to_delete=recipe_to_delete)
-    else:
-        # this is the page when opening /delete
-        return render_template('delete.html',form=form)
+
+    # this is the page when opening /delete
+    return render_template('delete.html',form=form)
 
 @app.route('/shopping_list')
 def make_list():
