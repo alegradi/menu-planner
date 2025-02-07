@@ -114,7 +114,7 @@ def search_recipe():
                 search_item = i
                 break
 
-        return render_template('search_result.html', recipe=search_item)
+        return render_template('search.html', form=form, recipe=search_item)
 
     return render_template('search.html', form=form)
 
