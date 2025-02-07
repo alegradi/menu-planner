@@ -2,7 +2,8 @@
 
 Where it all comes together
 """
-
+import json
+import os
 from flask import Flask, jsonify, render_template, request, redirect, url_for, flash
 from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
@@ -10,8 +11,7 @@ from wtforms import StringField, SelectField, SubmitField
 from wtforms.validators import DataRequired
 from build_menu import build_main_menu
 from save_recipe import save_recipe
-import json
-import os
+
 
 app = Flask(__name__)
 Bootstrap(app)
@@ -28,12 +28,20 @@ sample_data = {
 global_menu = []
 
 class SearchForm(FlaskForm):
-    genre = SelectField('Genre', choices=[('main', 'Main'), ('dessert', 'Dessert')], validators=[DataRequired()])
+    """
+    FlaskForm for /search page, searches a particular recipe
+    """
+    genre = SelectField('Genre', choices=[('main', 'Main'), ('dessert', 'Dessert')],
+                        validators=[DataRequired()])
     recipe_name = StringField('Recipe Name', validators=[DataRequired()])
     submit = SubmitField('Search')
 
 class DeleteForm(FlaskForm):
-    genre = SelectField('Genre', choices=[('main', 'Main'), ('dessert', 'Dessert')], validators=[DataRequired()])
+    """
+    FlaskForm for /delete page, search and confirm delete a particular recipe
+    """
+    genre = SelectField('Genre', choices=[('main', 'Main'), ('dessert', 'Dessert')],
+                        validators=[DataRequired()])
     recipe_name = StringField('Recipe Name', validators=[DataRequired()])
     submit = SubmitField('Search')
     delete = SubmitField('Confirm Delete')
@@ -90,6 +98,7 @@ def search_recipe():
     if form.validate_on_submit():
         name = form.recipe_name.data
         genre = form.genre.data
+        file_path = None
         if genre == "main":
             file_path = 'recipes/main_recipes.json'
         elif genre == "dessert":
@@ -101,8 +110,7 @@ def search_recipe():
         for i in recipes:
             if name.lower() == i["name"].lower():
                 search_item = i
-            else:
-                pass
+                break
 
         return render_template('search_result.html', recipe=search_item)
     else:
@@ -147,7 +155,8 @@ def delete():
 
         # If the "Search" button was clicked
         if request.form.get('search') == 'search':
-            return render_template('delete.html', form=form, recipe_to_delete=recipe_to_delete)
+            return render_template('delete.html', form=form,
+                                   recipe_to_delete=recipe_to_delete)
 
         name = recipe_to_delete['name']
 
@@ -160,11 +169,14 @@ def delete():
             with open(file_path, 'w', encoding='utf-8') as file:
                 json.dump({"recipes": recipes}, file, indent=4)
             # message that the recipe has been deletec
-            flash(message=f"Recipe '{recipe_to_delete['name']}' has been successfully deleted.", category="success")
+            flash(message=
+                  f"Recipe '{recipe_to_delete['name']}' has been successfully deleted.",
+                  category="success")
             return redirect(url_for('home'))
         else:
             # this is the page when user searched for a certain recipe after opening /delete
-            return render_template('delete.html', form=form, recipe_to_delete=recipe_to_delete)
+            return render_template('delete.html', form=form,
+                                   recipe_to_delete=recipe_to_delete)
     else:
         # this is the page when opening /delete
         return render_template('delete.html',form=form)
