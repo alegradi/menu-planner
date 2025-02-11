@@ -1,6 +1,7 @@
 {
     "recipes": [
         {
+            "genre": "dessert",
             "name": "Chocolate Cake",
             "ingredients": [
                 {"quantity": 2, "name":"cups flour"},

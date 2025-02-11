@@ -26,4 +26,17 @@
   <body>
     {% block content %}{% endblock %}
   </body>
+<!--Flash Message Block-->
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <div class="container mt-3">
+        {% for category, message in messages %}
+          <div class="alert alert-{{ category }}" role="alert">
+            {{ message }}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+<!--End Flash Message Block-->
 </html>

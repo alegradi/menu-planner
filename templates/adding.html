@@ -37,20 +37,20 @@
                             <input type="text" id="name-0" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[0][name]" required />
                         </div>
                         <div class="ingredient-group input-container">
-                            <input type="number" id="quantity-1" class="form-control ingredient-quantity" placeholder="Quantity" name="ingredients[0][quantity]" required />
-                            <input type="text" id="name-1" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[0][name]" required />
+                            <input type="number" id="quantity-1" class="form-control ingredient-quantity" placeholder="Quantity" name="ingredients[1][quantity]" required />
+                            <input type="text" id="name-1" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[1][name]" required />
                         </div>
                         <div class="ingredient-group input-container">
-                            <input type="number" id="quantity-2" class="form-control ingredient-quantity" placeholder="Quantity" name="ingredients[0][quantity]" required />
-                            <input type="text" id="name-2" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[0][name]" required />
+                            <input type="number" id="quantity-2" class="form-control ingredient-quantity" placeholder="Quantity" name="ingredients[2][quantity]" required />
+                            <input type="text" id="name-2" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[2][name]" required />
                         </div>
                         <div class="ingredient-group input-container">
-                            <input type="number" id="quantity-3" class="form-control ingredient-quantity" placeholder="Quantity" name="ingredients[0][quantity]" required />
-                            <input type="text" id="name-3" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[0][name]" required />
+                            <input type="number" id="quantity-3" class="form-control ingredient-quantity" placeholder="Quantity" name="ingredients[3][quantity]" required />
+                            <input type="text" id="name-3" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[3][name]" required />
                         </div>
                         <div class="ingredient-group input-container">
-                            <input type="number" id="quantity-4" class="form-control ingredient-quantity" placeholder="Quantity" name="ingredients[0][quantity]" required />
-                            <input type="text" id="name-4" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[0][name]" required />
+                            <input type="number" id="quantity-4" class="form-control ingredient-quantity" placeholder="Quantity" name="ingredients[4][quantity]" required />
+                            <input type="text" id="name-4" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[4][name]" required />
                         </div>
                     </div>
                     <button type="button" id="add-ingredient" class="btn btn-primary">Add another ingredient</button>
@@ -106,7 +106,8 @@
             newQuantityInput.classList.add('form-control');
             newQuantityInput.classList.add('ingredient-quantity');
             newQuantityInput.placeholder = 'Quantity';
-            newQuantityInput.name = `ingredients[${ingredientIndex}][quantity]`;
+            newQuantityInput.name = `ingredients[${ingredientIndex + 4}][quantity]`;
+            newQuantityInput.id = `quantity-${ingredientIndex + 4}`;
             newQuantityInput.required = true;
 
             let newNameInput = document.createElement('input');
@@ -114,7 +115,8 @@
             newNameInput.classList.add('form-control');
             newNameInput.classList.add('ingredient-name');
             newNameInput.placeholder = 'Ingredient name';
-            newNameInput.name = `ingredients[${ingredientIndex}][name]`;
+            newNameInput.name = `ingredients[${ingredientIndex + 4}][name]`;
+            newNameInput.id = `name-${ingredientIndex + 4}`;
             newNameInput.required = true;
 
             // Append inputs to the new ingredient group
