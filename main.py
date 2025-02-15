@@ -236,7 +236,7 @@ def add_recipes():
             ingredient_name = request.form.get(f'ingredients[{index}][name]')
             list_ingredients.append({'quantity': ingredient_quantity, 'name': ingredient_name})
             index += 1
-            print(index, list_ingredients)
+            # print(index, list_ingredients)
         # Create the recipe dictionary as per the required format
         recipe = {
         "genre": request.form['genre'],
