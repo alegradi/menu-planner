@@ -1,0 +1,31 @@
+{
+    "recipes": [
+        {
+            "genre": "dessert",
+            "name": "Chocolate Cake",
+            "ingredients": [
+                {"quantity": 2, "name":"cups flour"},
+                {"quantity": 2, "name":"cups sugar"},
+                {"quantity": 2, "name":"tsp baking powder"},
+                {"quantity": 0.75, "name":"cup cocoa powder"},
+                {"quantity": 1.5, "name":"tsp baking soda"},
+                {"quantity": 1, "name":"tsp salt"},
+                {"quantity": 1, "name":"cup milk"},
+                {"quantity": 0.5, "name":"cup vegetable oil"},
+                {"quantity": 2, "name":"eggs"},
+                {"quantity": 2, "name":"tsp vanilla extract"},
+                {"quantity": 1, "name":"cup boiling water"}
+            ],
+            "instructions": [
+                "Preheat oven to 350 degrees F (175 degrees C).",
+                "Grease and flour two 9-inch round baking pans.",
+                "In a large bowl, stir together the flour, sugar, cocoa, baking powder, baking soda, and salt.",
+                "Add the milk, vegetable oil, eggs, and vanilla to the flour mixture and mix until well combined.",
+                "Stir in the boiling water last. The batter will be thin.",
+                "Pour the batter evenly into the prepared pans.",
+                "Bake for 30 to 35 minutes, or until a toothpick inserted into the center comes out clean.",
+                "Cool in the pans for 10 minutes, then remove to a wire rack to cool completely."
+            ]
+        }
+    ]
+}
