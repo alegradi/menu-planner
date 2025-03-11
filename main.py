@@ -11,7 +11,6 @@ from wtforms import StringField, SelectField, SubmitField
 from wtforms.validators import DataRequired
 from build_menu import build_main_menu
 from save_recipe import save_recipe
-from open_recipes import open_recipe
 
 
 app = Flask(__name__)
