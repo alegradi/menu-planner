@@ -4,7 +4,7 @@ Where it all comes together
 """
 import json
 import os
-from flask import Flask, jsonify, render_template, request, redirect, url_for, flash
+from flask import Flask, jsonify, render_template, request, redirect, url_for, flash, session
 from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
 from wtforms import StringField, SelectField, SubmitField
@@ -248,20 +248,24 @@ def add_recipes():
         "instructions": process_webform(request.form['instructions'])
     }
         save_recipe(recipe)
+        session['new_recipe'] = recipe  # Store in session for retrieval
         return redirect(url_for('successful'))
     return render_template('adding.html')
 
-@app.route('/successful')
+@app.route('/successful', methods=['GET'])
 def successful():
     """
     Route when visiting /successful
     Returns:
         HTML response when add_recipes() ran correctly
     """
-    with open('recipes/main_recipes.json', 'r', encoding='utf-8') as file:
-        file_main_recipes = json.load(file)
-        last_item = file_main_recipes["recipes"][-1]
-    return render_template('successful.html', recipe=last_item)
+    recipe = session.get('new_recipe')
+
+    if not recipe:
+        flash("No recipe found! Please try adding a recipe again.", "error")
+        return redirect(url_for('add_recipes'))
+
+    return render_template('successful.html', recipe=recipe)
 
 
 if __name__ == '__main__':

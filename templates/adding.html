@@ -17,6 +17,7 @@
                         <select class="form-control" id="genre" name="genre" required>
                             <option value="main">Main</option>
                             <option value="dessert">Dessert</option>
+                            <option value="bread">Bread</option>
                         </select>
                     </div>
                     <!-- Recipe Name -->
@@ -24,9 +25,9 @@
                         <label for="name">Recipe Name:</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Enter the recipe name" required />
                     </div>
-                    <!-- Weight -->
+                    <!-- Weights -->
                     <div class="form-group">
-                        <label for="weight">Weight (How many days food can last):</label>
+                        <label for="weight" id="weight-label" aria-live="polite">Weight (How many days food can last):</label>
                         <input type="number" class="form-control" id="weight" placeholder="Enter weight" name="weight" required />
                     </div>
                     <!-- Ingredients -->
@@ -37,27 +38,27 @@
                             <input type="text" id="name-0" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[0][name]" required />
                         </div>
                         <div class="ingredient-group input-container">
-                            <input type="number" id="quantity-1" class="form-control ingredient-quantity" placeholder="Quantity" name="ingredients[1][quantity]" required />
-                            <input type="text" id="name-1" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[1][name]" required />
+                            <input type="number" id="quantity-1" class="form-control ingredient-quantity" placeholder="Quantity" name="ingredients[1][quantity]" />
+                            <input type="text" id="name-1" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[1][name]" />
                         </div>
                         <div class="ingredient-group input-container">
-                            <input type="number" id="quantity-2" class="form-control ingredient-quantity" placeholder="Quantity" name="ingredients[2][quantity]" required />
-                            <input type="text" id="name-2" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[2][name]" required />
+                            <input type="number" id="quantity-2" class="form-control ingredient-quantity" placeholder="Quantity" name="ingredients[2][quantity]" />
+                            <input type="text" id="name-2" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[2][name]" />
                         </div>
                         <div class="ingredient-group input-container">
-                            <input type="number" id="quantity-3" class="form-control ingredient-quantity" placeholder="Quantity" name="ingredients[3][quantity]" required />
-                            <input type="text" id="name-3" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[3][name]" required />
+                            <input type="number" id="quantity-3" class="form-control ingredient-quantity" placeholder="Quantity" name="ingredients[3][quantity]" />
+                            <input type="text" id="name-3" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[3][name]" />
                         </div>
                         <div class="ingredient-group input-container">
-                            <input type="number" id="quantity-4" class="form-control ingredient-quantity" placeholder="Quantity" name="ingredients[4][quantity]" required />
-                            <input type="text" id="name-4" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[4][name]" required />
+                            <input type="number" id="quantity-4" class="form-control ingredient-quantity" placeholder="Quantity" name="ingredients[4][quantity]" />
+                            <input type="text" id="name-4" class="form-control ingredient-name" placeholder="Ingredient name" name="ingredients[4][name]" />
                         </div>
                     </div>
                     <button type="button" id="add-ingredient" class="btn btn-primary">Add another ingredient</button>
                     <br><br>
                     <!-- cuisine -->
                     <div class="form-group">
-                        <label for="cuisine">Cuisine (e.g., Japanese, Hungarian etc):</label>
+                        <label for="cuisine">Cuisine (e.g.Main: Japanese, Hungarian etc / Bread: loaf, sourdough etc):</label>
                         <input type="text" class="form-control" id="cuisine" name="cuisine" placeholder="Enter the cuisine" required>
                     </div>
                     <!-- Recipe Link -->
@@ -129,6 +130,45 @@
 
             // Increment the ingredient index for the next one
             ingredientIndex++;
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('form');
+
+            form.addEventListener('submit', function (event) {
+                // Filter out empty ingredient fields before submitting
+                const ingredientGroups = document.querySelectorAll('.ingredient-group');
+
+                ingredientGroups.forEach(group => {
+                    const quantityInput = group.querySelector('.ingredient-quantity');
+                    const nameInput = group.querySelector('.ingredient-name');
+
+                    // If both fields are empty, remove them to avoid submission errors
+                    if (!quantityInput.value && !nameInput.value) {
+                        quantityInput.removeAttribute('name');
+                        nameInput.removeAttribute('name');
+                    }
+                });
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const genreSelect = document.getElementById('genre');
+            const weightLabel = document.getElementById('weight-label');
+
+            function updateWeightLabel() {
+                if (genreSelect.value === 'bread') {
+                    weightLabel.textContent = 'Weight (How many pieces of bread?):';
+                } else if (genreSelect.value === 'dessert') {
+                    weightLabel.textContent = 'Weight (servings or portions):';
+                } else {
+                    weightLabel.textContent = 'Weight (How many days food can last):';
+                }
+            }
+
+            // Initial check on page load
+            updateWeightLabel();
+
+            // Update label when genre selection changes
+            genreSelect.addEventListener('change', updateWeightLabel);
         });
     </script>
 {% endblock %}

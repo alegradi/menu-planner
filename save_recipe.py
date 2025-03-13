@@ -8,6 +8,7 @@ import json
 
 MAIN_RECIPES = './recipes/main_recipes.json'
 DESSERT_RECIPES = './recipes/dessert_recipes.json'
+BREAD_RECIPES = './recipes/bread_recipes.json'
 
 # Function to save new recipe to the JSON file
 def save_recipe(recipe):
@@ -20,6 +21,8 @@ def save_recipe(recipe):
     """
     if recipe['genre'].lower() == 'dessert':
         file_to_save = DESSERT_RECIPES
+    elif recipe['genre'].lower() == 'bread':
+        file_to_save = BREAD_RECIPES
     else:
         file_to_save = MAIN_RECIPES
 
