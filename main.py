@@ -9,9 +9,9 @@ from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
 from wtforms import StringField, SelectField, SubmitField
 from wtforms.validators import DataRequired
-from build_menu import build_main_menu
+from build_menu import build_main_menu, bread_suggestion
 from save_recipe import save_recipe
-
+from data import vegetables, fruits, meats, spices, aisle_products, fridge_freezer
 
 app = Flask(__name__)
 Bootstrap(app)
@@ -26,6 +26,16 @@ sample_data = {
 }
 
 global_menu = []
+
+# Define category dictionary
+CATEGORIES = {
+    "Vegetables": [item.lower() for item in vegetables],
+    "Fruits": [item.lower() for item in fruits],
+    "Meats": [item.lower() for item in meats],
+    "Spices": [item.lower() for item in spices],
+    "Pantry & Dry Goods": [item.lower() for item in aisle_products],
+    "Fridge & Freezer": [item.lower() for item in fridge_freezer]
+}
 
 class SearchForm(FlaskForm):
     """
@@ -83,7 +93,8 @@ def get_recipes():
     """
     global global_menu    # pylint: disable=global-statement
     global_menu = build_main_menu()
-    return render_template('recipes.html', menu=global_menu)
+    bread_suggestion_data = bread_suggestion()
+    return render_template('recipes.html', menu=global_menu, bread=bread_suggestion_data)
 
 @app.route('/search', methods=["GET","POST"])
 def search_recipe():
@@ -104,6 +115,8 @@ def search_recipe():
             file_path = 'recipes/main_recipes.json'
         elif genre == "dessert":
             file_path = 'recipes/dessert_recipes.json'
+        elif genre == "bread":
+            file_path = 'recipes/bread_recipes.json'
 
         with open(file_path, 'r', encoding='utf-8') as file:
             data = json.load(file)
@@ -137,6 +150,8 @@ def delete():
             file_path = 'recipes/main_recipes.json'
         elif genre == "dessert":
             file_path = 'recipes/dessert_recipes.json'
+        elif genre == "bread":
+            file_path = 'recipes/bread_recipes.json'
         #check if file_path is correctly assigned
         if not file_path:
             return redirect(url_for('home'))
@@ -202,11 +217,28 @@ def make_list():
                     shopping_dict[ingredient_name] += ingredient_quantity
                 else:
                     shopping_dict[ingredient_name] = ingredient_quantity
+
     # Convert dictionary back to list of dictionaries
     shopping_list = [{"name": name, "quantity": quantity}
                      for name, quantity in shopping_dict.items()]
-    print("Final Shopping List:", shopping_list)
-    return render_template("shopping_list.html", shopping_list=shopping_list)
+
+    sorted_list = {category: [] for category in CATEGORIES.keys()}
+    sorted_list["Uncategorised"] = []  # For items not found in any category
+
+    # Categorise items
+    for item in shopping_list:
+        found = False
+        for category, items in CATEGORIES.items():
+            if item['name'] in items:
+                sorted_list[category].append(item)
+                found = True
+                break  # ✅ Stop checking once it's categorised
+
+        if not found:
+            sorted_list["Uncategorised"].append(item)  # ✅ Only add if no category matched
+
+    print("Final Shopping List:", sorted_list)
+    return render_template("shopping_list.html", shopping_list=sorted_list)
 
 def process_webform(webform_text):
     """
@@ -233,8 +265,9 @@ def add_recipes():
         while f'ingredients[{index}][quantity]' in request.form:
             # Extracting ingredient data
             ingredient_quantity = request.form.get(f'ingredients[{index}][quantity]')
+            ingredient_measurement = request.form.get(f'ingredients[{index}][measurement]')
             ingredient_name = request.form.get(f'ingredients[{index}][name]')
-            list_ingredients.append({'quantity': ingredient_quantity, 'name': ingredient_name})
+            list_ingredients.append({'quantity': ingredient_quantity, 'measurement': ingredient_measurement, 'name': ingredient_name})
             index += 1
             # print(index, list_ingredients)
         # Create the recipe dictionary as per the required format

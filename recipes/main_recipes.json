@@ -5,31 +5,38 @@
             "ingredients": [
                 {
                     "quantity": 2,
+                    "measurement": "pieces",
                     "name": "boneless & skinless chicken breasts"
                 },
                 {
                     "quantity": 1,
-                    "name": "tablespoon avocado or olive oil"
+                    "measurement": "tablespoon",
+                    "name": "avocado or olive oil"
                 },
                 {
                     "quantity": 1,
-                    "name": "teaspoon smoked paprika"
+                    "measurement": "teaspoon",
+                    "name": "smoked paprika"
                 },
                 {
                     "quantity": 1,
-                    "name": "teaspoon garlic powder"
+                    "measurement": "teaspoon",
+                    "name": "garlic powder"
                 },
                 {
                     "quantity": 1,
-                    "name": "teaspoon oregano"
+                    "measurement": "teaspoon",
+                    "name": "oregano"
                 },
                 {
                     "quantity": 0.5,
-                    "name": "teaspoon salt"
+                    "measurement": "teaspoon",
+                    "name": "salt"
                 },
                 {
                     "quantity": 0,
-                    "name": "Ground black pepper to taste"
+                    "measurement": "to taste",
+                    "name": "Ground black pepper"
                 }
             ],
             "cuisine": "General",
@@ -48,47 +55,58 @@
             "ingredients": [
                 {
                     "quantity": 800,
-                    "name": "grams boneless skinless chicken thighs"
+                    "measurement": "grams",
+                    "name": "boneless skinless chicken thighs"
                 },
                 {
                     "quantity": 4,
-                    "name": "tablespoons all-purpose flour"
+                    "measurement": "tablespoons",
+                    "name": "all-purpose flour"
                 },
                 {
                     "quantity": 2,
-                    "name": "tablespoon cultured unsalted butter"
+                    "measurement": "tablespoons",
+                    "name": "cultured unsalted butter"
                 },
                 {
                     "quantity": 500,
-                    "name": "grams button mushrooms"
+                    "measurement": "grams",
+                    "name": "button mushrooms"
                 },
                 {
                     "quantity": 350,
-                    "name": "grams onions (1 small onion, finely diced)"
+                    "measurement": "grams",
+                    "name": "onions (1 small onion, finely diced)"
                 },
                 {
                     "quantity": 0.5,
-                    "name": "cup dry vermouth"
+                    "measurement": "cup",
+                    "name": "dry vermouth"
                 },
                 {
                     "quantity": 2,
-                    "name": "cup low sodium chicken stock"
+                    "measurement": "cup",
+                    "name": "low sodium chicken stock"
                 },
                 {
                     "quantity": 2,
-                    "name": "tablespoon tomato paste"
+                    "measurement": "tablespoon",
+                    "name": "tomato paste"
                 },
                 {
                     "quantity": 2,
+                    "measurement": "pieces",
                     "name": "bay leaf"
                 },
                 {
                     "quantity": 10,
-                    "name": "sprigs fresh thyme (tied with twine)"
+                    "measurement": "sprigs",
+                    "name": "fresh thyme (tied with twine)"
                 },
                 {
                     "quantity": 0.67,
-                    "name": "cup sour cream"
+                    "measurement": "cup",
+                    "name": "sour cream"
                 }
             ],
             "cuisine": "Russian",
@@ -111,86 +129,107 @@
             "ingredients": [
                 {
                     "quantity": 1,
-                    "name": "kg chicken thigh fillets , boneless skinless"
+                    "measurement": "kg",
+                    "name": "chicken thigh fillets , boneless skinless"
                 },
                 {
                     "quantity": 3,
-                    "name": "large garlic cloves"
+                    "measurement": "cloves",
+                    "name": "large garlic"
                 },
                 {
                     "quantity": 3,
-                    "name": "tbsp white wine vinegar (or red wine or apple cider vinegar)"
+                    "measurement": "tablespoons",
+                    "name": "white wine vinegar (or red wine or apple cider vinegar)"
                 },
                 {
                     "quantity": 3,
-                    "name": "tbsp lemon juice"
+                    "measurement": "tablespoons",
+                    "name": "lemon juice"
                 },
                 {
                     "quantity": 1,
-                    "name": "tbsp extra virgin olive oil"
+                    "measurement": "tablespoons",
+                    "name": "extra virgin olive oil"
                 },
                 {
                     "quantity": 3,
-                    "name": "tbsp Greek yogurt , preferably full fat"
+                    "measurement": "tablespoons",
+                    "name": "Greek yogurt , preferably full fat"
                 },
                 {
                     "quantity": 1.5,
-                    "name": "tbsp dried oregano"
+                    "measurement": "tablespoons",
+                    "name": "dried oregano"
                 },
                 {
                     "quantity": 1,
-                    "name": "tsp salt"
+                    "measurement": "teaspoons",
+                    "name": "salt"
                 },
                 {
                     "quantity": 0,
+                    "measurement": "to taste",
                     "name": "Black pepper"
                 },
                 {
                     "quantity": 2,
+                    "measurement": "pieces",
                     "name": "cucumbers (to make about 1/2 ~ 3/4 cup grated cucumber after squeezing out juice)"
                 },
                 {
                     "quantity": 1.25,
-                    "name": "cups Greek yoghurt , preferably full fat"
+                    "measurement": "cups",
+                    "name": "Greek yoghurt , preferably full fat"
                 },
                 {
                     "quantity": 1,
-                    "name": "tbsp lemon juice"
+                    "measurement": "tablespoons",
+                    "name": "lemon juice"
                 },
                 {
                     "quantity": 1,
-                    "name": "tbsp extra virgin olive oil (or more if you want richer)"
+                    "measurement": "tablespoons",
+                    "name": "extra virgin olive oil (or more if you want richer)"
                 },
                 {
                     "quantity": 1,
-                    "name": "garlic clove , minced"
+                    "measurement": "cloves",
+                    "name": "garlic, minced"
                 },
                 {
                     "quantity": 1.25,
-                    "name": "tsp salt"
+                    "measurement": "teaspoons",
+                    "name": "salt"
                 },
                 {
                     "quantity": 3,
+                    "measurement": "pieces",
                     "name": "tomatoes , desseeded and diced"
                 },
                 {
                     "quantity": 3,
+                    "measurement": "pieces",
                     "name": "cucumbers , diced"
                 },
                 {
                     "quantity": 0.5,
+                    "measurement": "half",
                     "name": "red spanish onion , peeled and finely chopped"
                 },
                 {
                     "quantity": 0.25,
-                    "name": "cup fresh parsley leaves (optional)"
+                    "measurement": "cup",
+                    "name": "fresh parsley leaves (optional)"
                 },
                 {
                     "quantity": 1,
+                    "measurement": "to taste",
                     "name": "Salt and pepper"
                 },
                 {
                     "quantity": 6,
+                    "measurement": "pieces",
                     "name": "pita breads or flat breads to serve"
                 }
             ],
@@ -214,16 +253,56 @@
         {
             "name": "No-fuss shepherds pie",
             "ingredients": [
-                "1 tablespoon sunflower oil",
-                "1 onion",
-                "3 carrots",
-                "500 grams lamb mince",
-                "2 tablespoon tomato puree",
-                "Worcestershire sauce",
-                "500 ml beef stock",
-                "900 grams potato",
-                "85 grams butter",
-                "3 tablespoon milk"
+                {
+                    "quantity": 1,
+                    "measurement": "tablespoon",
+                    "name": "sunflower oil"
+                },
+                {
+                    "quantity": 1,
+                    "measurement": "piece",
+                    "name": "onion"
+                },
+                {
+                    "quantity": 3,
+                    "measurement": "pieces",
+                    "name": "carrots"
+                },
+                {
+                    "quantity": 500,
+                    "measurement": "grams",
+                    "name": "pita breads or flat breads to serve"
+                },
+                {
+                    "quantity": 2,
+                    "measurement": "tablespoons",
+                    "name": "tomato puree"
+                },
+                {
+                    "quantity": 1,
+                    "measurement": "to taste",
+                    "name": "Worcestershire sauce"
+                },
+                {
+                    "quantity": 500,
+                    "measurement": "ml",
+                    "name": "beef stock"
+                },
+                {
+                    "quantity": 900,
+                    "measurement": "grams",
+                    "name": "potato"
+                },
+                {
+                    "quantity": 85,
+                    "measurement": "grams",
+                    "name": "butter"
+                },
+                {
+                    "quantity": 3,
+                    "measurement": "tablespoons",
+                    "name": "milk"
+                }
             ],
             "cuisine": "British",
             "weight": 3,
@@ -1082,67 +1161,83 @@
             "ingredients": [
                 {
                     "quantity": "1",
-                    "name": "tbsp vegetable oil"
+                    "measurement": "tablespoons",
+                    "name": "vegetable oil"
                 },
                 {
                     "quantity": "1",
+                    "measurement": "piece",
                     "name": "large onion, finely chopped"
                 },
                 {
                     "quantity": "5",
-                    "name": "cm piece ginger, finely chopped"
+                    "measurement": "cm piece",
+                    "name": "ginger, finely chopped"
                 },
                 {
                     "quantity": "2",
-                    "name": "garlic cloves, finely chopped"
+                    "measurement": "cloves",
+                    "name": "garlic, finely chopped"
                 },
                 {
                     "quantity": "1",
+                    "measurement": "piece",
                     "name": "red chilli, finely chopped"
                 },
                 {
                     "quantity": "1",
-                    "name": "heaped tsp ground cumin"
+                    "measurement": "heaped teaspoon",
+                    "name": "ground cumin"
                 },
                 {
                     "quantity": "1",
-                    "name": "heaped tsp ground coriander"
+                    "measurement": "heaped teaspoon",
+                    "name": "ground coriander"
                 },
                 {
                     "quantity": "1",
-                    "name": "heaped tsp ground turmeric"
+                    "measurement": "heaped teaspoon",
+                    "name": "ground turmeric"
                 },
                 {
                     "quantity": "1",
+                    "measurement": "piece",
                     "name": "aubergine, chopped into 1cm pieces"
                 },
                 {
                     "quantity": "400",
-                    "name": "g tin chopped tomatoes"
+                    "measurement": "grams",
+                    "name": "tin chopped tomatoes"
                 },
                 {
                     "quantity": "200",
-                    "name": "ml vegan-friendly hot vegetable stock"
+                    "measurement": "ml",
+                    "name": "vegan-friendly hot vegetable stock"
                 },
                 {
                     "quantity": "1",
+                    "measurement": "piece",
                     "name": "courgette, chopped into 1 cm pieces"
                 },
                 {
                     "quantity": "300",
-                    "name": "g basmati rice"
+                    "measurement": "grams",
+                    "name": "basmati rice"
                 },
                 {
                     "quantity": "100",
-                    "name": "g spinach"
+                    "measurement": "grams",
+                    "name": "spinach"
                 },
                 {
                     "quantity": "150",
-                    "name": "g peas (fresh or defrosted if frozen)"
+                    "measurement": "grams",
+                    "name": "peas (fresh or defrosted if frozen)"
                 },
                 {
                     "quantity": "1",
-                    "name": "chopped fresh coriander, to serve"
+                    "measurement": "to serve",
+                    "name": "chopped fresh coriander"
                 }
             ],
             "cuisine": "Indian",
@@ -1162,47 +1257,58 @@
             "ingredients": [
                 {
                     "quantity": "454",
-                    "name": "g firm tofu"
+                    "measurement": "grams",
+                    "name": "firm tofu"
                 },
                 {
                     "quantity": "3",
-                    "name": "stalks green onion (white part only)"
+                    "measurement": "stalks",
+                    "name": "green onion (white part only)"
                 },
                 {
                     "quantity": "56",
-                    "name": "g mini bell pepper (also labeled \"sweet peppers\")"
+                    "measurement": "grams",
+                    "name": "mini bell pepper (also labeled \"sweet peppers\")"
                 },
                 {
                     "quantity": "2",
-                    "name": "clove garlic"
+                    "measurement": "cloves",
+                    "name": "garlic"
                 },
                 {
                     "quantity": "946",
-                    "name": "mL boiling water"
+                    "measurement": "ml",
+                    "name": "boiling water"
                 },
                 {
                     "quantity": "1",
-                    "name": "tsp salt"
+                    "measurement": "teaspoon",
+                    "name": "salt"
                 },
                 {
-                    "quantity": "1",
-                    "name": "half egg"
+                    "quantity": "0.5",
+                    "measurement": "half",
+                    "name": "egg"
                 },
                 {
                     "quantity": "6",
-                    "name": "tbsp cornstarch"
+                    "measurement": "tablespoons",
+                    "name": "cornstarch"
                 },
                 {
                     "quantity": "2",
-                    "name": "tbsp oil (for stir-frying; can re-use oil from deep-fry step) or can be deepfried"
+                    "measurement": "tablespoons",
+                    "name": "oil (for stir-frying; can re-use oil from deep-fry step) or can be deepfried"
                 },
                 {
                     "quantity": "1",
-                    "name": "tbsp garlic salt"
+                    "measurement": "tablespoons",
+                    "name": "garlic salt"
                 },
                 {
-                    "quantity": "1",
-                    "name": "1/4 tsp white pepper"
+                    "quantity": "0.25",
+                    "measurement": "teaspoons",
+                    "name": "white pepper"
                 }
             ],
             "cuisine": "Chinese",
@@ -1242,47 +1348,58 @@
             "ingredients": [
                 {
                     "quantity": "1",
-                    "name": "tbsp olive oil"
+                    "measurement": "tablespoons",
+                    "name": "olive oil"
                 },
                 {
                     "quantity": "1",
+                    "measurement": "piece",
                     "name": "onion sliced"
                 },
                 {
                     "quantity": "1",
-                    "name": "clove of garlic"
+                    "measurement": "cloves",
+                    "name": "garlic"
                 },
                 {
                     "quantity": "1",
-                    "name": "tbsp butter"
+                    "measurement": "tablespoons",
+                    "name": "butter"
                 },
                 {
                     "quantity": "250",
-                    "name": "g mushrooms sliced"
+                    "measurement": "grams",
+                    "name": "mushrooms sliced"
                 },
                 {
                     "quantity": "1",
-                    "name": "tbsp plain flour"
+                    "measurement": "tablespoons",
+                    "name": "plain flour"
                 },
                 {
                     "quantity": "500",
-                    "name": "g fillet steak sliced"
+                    "measurement": "grams",
+                    "name": "fillet steak sliced"
                 },
                 {
                     "quantity": "150",
-                    "name": "g creame franche"
+                    "measurement": "grams",
+                    "name": "creame franche"
                 },
                 {
                     "quantity": "1",
-                    "name": "tsp English mustard"
+                    "measurement": "teaspoon",
+                    "name": "English mustard"
                 },
                 {
                     "quantity": "100",
-                    "name": "ml beef stock"
+                    "measurement": "ml",
+                    "name": "beef stock"
                 },
                 {
-                    "quantity": "1",
-                    "name": "1/2 small pack of parsley chopped"
+                    "quantity": "0.5",
+                    "measurement": "half",
+                    "name": "small pack of parsley chopped"
                 }
             ],
             "cuisine": "Russian",
@@ -1306,31 +1423,38 @@
             "ingredients": [
                 {
                     "quantity": "1",
-                    "name": "pound 85% to 93% lean ground beef"
+                    "measurement": "pound",
+                    "name": "85% to 93% lean ground beef"
                 },
                 {
                     "quantity": "1",
-                    "name": "teaspoon ground cumin"
+                    "measurement": "teaspoon",
+                    "name": "ground cumin"
                 },
                 {
                     "quantity": "1",
-                    "name": "teaspoon smoked paprika"
+                    "measurement": "teaspoon",
+                    "name": "smoked paprika"
+                },
+                {
+                    "quantity": "0.5",
+                    "measurement": "teaspoon",
+                    "name": "garlic powder"
                 },
                 {
                     "quantity": "1",
-                    "name": "1/2 teaspoon garlic powder"
-                },
-                {
-                    "quantity": "1",
+                    "measurement": "teaspoon",
                     "name": "1/2 teaspoon chili powder"
                 },
                 {
-                    "quantity": "1",
-                    "name": "1/2 teaspoon salt"
+                    "quantity": "0.5",
+                    "measurement": "teaspoon",
+                    "name": "salt"
                 },
                 {
-                    "quantity": "1",
-                    "name": "1/2 teaspoon freshly cracked pepper"
+                    "quantity": "0.5",
+                    "measurement": "teaspoon",
+                    "name": "freshly cracked pepper"
                 }
             ],
             "cuisine": "Mexican",
@@ -1351,47 +1475,58 @@
             "ingredients": [
                 {
                     "quantity": "2",
+                    "measurement": "pieces",
                     "name": "chicken breasts finely sliced"
                 },
                 {
                     "quantity": "1",
+                    "measurement": "pieces",
                     "name": "red onion finely sliced"
                 },
                 {
                     "quantity": "1",
+                    "measurement": "pieces",
                     "name": "red pepper sliced"
                 },
                 {
                     "quantity": "1",
+                    "measurement": "pieces",
                     "name": "red chilli finely sliced (optional)"
                 },
                 {
                     "quantity": "1",
-                    "name": "tbsp smoked paprika"
+                    "measurement": "tablespoon",
+                    "name": "smoked paprika"
                 },
                 {
                     "quantity": "1",
-                    "name": "tbsp ground coriander"
+                    "measurement": "tablespoon",
+                    "name": "ground coriander"
                 },
                 {
                     "quantity": "1",
+                    "measurement": "tablespoon",
                     "name": "ground cumin"
                 },
                 {
                     "quantity": "2",
-                    "name": "garlic cloves crushed"
+                    "measurement": "cloves",
+                    "name": "garlic crushed"
                 },
                 {
                     "quantity": "4",
-                    "name": "tbsp olive oil"
+                    "measurement": "tablespoon",
+                    "name": "olive oil"
                 },
                 {
                     "quantity": "1",
+                    "measurement": "piece",
                     "name": " lime juiced"
                 },
                 {
                     "quantity": "230",
-                    "name": "g fresh salsa"
+                    "measurement": "grams",
+                    "name": "fresh salsa"
                 }
             ],
             "cuisine": "Mexican",
@@ -1413,59 +1548,73 @@
             "ingredients": [
                 {
                     "quantity": "2",
-                    "name": "tsp Olive oil"
+                    "measurement": "teaspoons",
+                    "name": "Olive oil"
                 },
                 {
                     "quantity": "650",
-                    "name": "g Chicken breasts, About x4."
+                    "measurement": "grams",
+                    "name": "Chicken breasts, About x4."
                 },
                 {
                     "quantity": "1",
+                    "measurement": "piece",
                     "name": "Red pepper (capsicum), Deseeded and cut into wedges."
                 },
                 {
                     "quantity": "1",
+                    "measurement": "piece",
                     "name": "Yellow pepper (capsicum), Deseeded and cut into wedges."
                 },
                 {
                     "quantity": "1",
+                    "measurement": "piece",
                     "name": "Green pepper (capsicum), Deseeded and cut into wedges."
                 },
                 {
                     "quantity": "2",
+                    "measurement": "pieces",
                     "name": "Large onions, Peeled and cut into wedges."
                 },
                 {
                     "quantity": "1",
-                    "name": "tbsp Chilli powder"
+                    "measurement": "tablespoon",
+                    "name": "Chilli powder"
                 },
                 {
                     "quantity": "1",
-                    "name": "tsp Ground cumin"
+                    "measurement": "teaspoon",
+                    "name": "Ground cumin"
                 },
                 {
                     "quantity": "1",
-                    "name": "tsp Cumin seeds"
+                    "measurement": "teaspoon",
+                    "name": "Cumin seeds"
                 },
                 {
                     "quantity": "2",
-                    "name": "tsp Paprika"
+                    "measurement": "teaspoon",
+                    "name": "Paprika"
+                },
+                {
+                    "quantity": "0.25",
+                    "measurement": "teaspoon",
+                    "name": "Cayenne pepper"
+                },
+                {
+                    "quantity": "0.5",
+                    "measurement": "teaspoon",
+                    "name": "Garlic powder"
                 },
                 {
                     "quantity": "1",
-                    "name": "1/4 tsp Cayenne pepper"
+                    "measurement": "teaspoon",
+                    "name": "Sea salt"
                 },
                 {
                     "quantity": "1",
-                    "name": "1/2 tsp Garlic powder"
-                },
-                {
-                    "quantity": "1",
-                    "name": "tsp Sea salt"
-                },
-                {
-                    "quantity": "1",
-                    "name": "tsp Ground black pepper"
+                    "measurement": "teaspoon",
+                    "name": "Ground black pepper"
                 }
             ],
             "cuisine": "Mexican",
@@ -1483,28 +1632,34 @@
             "name": "Fresh Pico de Gallo Recipe",
             "ingredients": [
                 {
-                    "quantity": "1",
-                    "name": "and \u00bd pounds tomatoes, chopped, 4 to 5 medium"
+                    "quantity": "1.5",
+                    "measurement": "pounds",
+                    "name": "tomatoes, chopped, 4 to 5 medium"
+                },
+                {
+                    "quantity": "0.7",
+                    "measurement": "cup",
+                    "name": "medium onion, chopped"
                 },
                 {
                     "quantity": "1",
-                    "name": "medium onion, chopped, about 2/3 cup"
+                    "measurement": "piece",
+                    "name": "jalapeno or serrano peppers, finely diced, with seeds and membranes removed for a milder salsa"
+                },
+                {
+                    "quantity": "0.5",
+                    "measurement": "cup",
+                    "name": "finely chopped fresh cilantro leaves"
                 },
                 {
                     "quantity": "1",
-                    "name": "jalape\u00f1o or serrano peppers, finely diced, with seeds and membranes removed for a milder salsa"
-                },
-                {
-                    "quantity": "1",
-                    "name": "1/2 cup finely chopped fresh cilantro leaves"
-                },
-                {
-                    "quantity": "1",
+                    "measurement": "tablespoon",
                     "name": "lime - Juice"
                 },
                 {
                     "quantity": "1",
-                    "name": "Salt to taste"
+                    "measurement": "to taste",
+                    "name": "Salt"
                 }
             ],
             "cuisine": "Mexican",
@@ -1523,26 +1678,32 @@
             "ingredients": [
                 {
                     "quantity": "1",
+                    "measurement": "piece",
                     "name": "large ripe tomato"
                 },
                 {
                     "quantity": "3",
+                    "measurement": "pieces",
                     "name": "avocados very ripe but not bruised"
                 },
                 {
                     "quantity": "1",
-                    "name": "juice 1 large lime"
+                    "measurement": "piece",
+                    "name": "large lime juice"
                 },
                 {
                     "quantity": "1",
-                    "name": "handful coriander leaves and stalks chopped, plus a few leaves, roughly chopped, to serve"
+                    "measurement": "handful",
+                    "name": "coriander leaves and stalks chopped, plus a few leaves, roughly chopped, to serve"
                 },
                 {
                     "quantity": "1",
+                    "measurement": "piece",
                     "name": "small red onion finely chopped"
                 },
                 {
                     "quantity": "1",
+                    "measurement": "piece",
                     "name": "chilli red or green, deseeded and finely chopped"
                 }
             ],
@@ -1562,43 +1723,53 @@
             "ingredients": [
                 {
                     "quantity": "500",
-                    "name": "grams minced turkey / chicken"
+                    "measurement": "grams",
+                    "name": "minced turkey / chicken"
                 },
                 {
                     "quantity": "500",
-                    "name": "grams minced pork"
+                    "measurement": "grams",
+                    "name": "minced pork"
                 },
                 {
                     "quantity": "1",
-                    "name": "cup finely chopped spring onion, about 3 stalks"
+                    "measurement": "cup",
+                    "name": "finely chopped spring onion, about 3 stalks"
+                },
+                {
+                    "quantity": "0.5",
+                    "measurement": "cup",
+                    "name": "bread crumbs"
                 },
                 {
                     "quantity": "1",
-                    "name": "1/2 cup bread crumbs"
-                },
-                {
-                    "quantity": "1",
+                    "measurement": "piece",
                     "name": " large egg"
                 },
                 {
                     "quantity": "1",
-                    "name": "tablespoon peeled grated ginger"
+                    "measurement": "tablespoon",
+                    "name": "grated ginger"
+                },
+                {
+                    "quantity": "1.5",
+                    "measurement": "tablespoon",
+                    "name": "light soy sauce"
                 },
                 {
                     "quantity": "1",
-                    "name": "and 1/2 tablespoons light soy sauce"
+                    "measurement": "tablespoon",
+                    "name": "sesame oil, reduce if you don't like it too strong"
+                },
+                {
+                    "quantity": "0.5",
+                    "measurement": "teaspoon",
+                    "name": "salt"
                 },
                 {
                     "quantity": "1",
-                    "name": "tablespoon sesame oil, reduce if you don't like it too strong"
-                },
-                {
-                    "quantity": "1",
-                    "name": " 1/2 teaspoon salt"
-                },
-                {
-                    "quantity": "1",
-                    "name": "Dash of white pepper"
+                    "measurement": "dash",
+                    "name": "white pepper"
                 }
             ],
             "cuisine": "Asian",
@@ -1616,91 +1787,113 @@
             "name": "Laksa Noodle Soup",
             "ingredients": [
                 {
-                    "quantity": "2",
-                    "name": "cups (500 ml) chicken stock / broth"
+                    "quantity": "500",
+                    "measurement": "ml",
+                    "name": "chicken stock / broth"
                 },
                 {
-                    "quantity": "1",
-                    "name": " cup (250 ml) water"
+                    "quantity": "250",
+                    "measurement": "ml",
+                    "name": "water"
                 },
                 {
                     "quantity": "3",
+                    "measurement": "piece",
                     "name": "chicken drumsticks (Note 1)"
                 },
                 {
+                    "quantity": "1.5",
+                    "measurement": "tablespoons",
+                    "name": "oil"
+                },
+                {
+                    "quantity": "2",
+                    "measurement": "cloves",
+                    "name": "garlic, minced"
+                },
+                {
+                    "quantity": "2",
+                    "measurement": "cm",
+                    "name": "ginger , finely grated"
+                },
+                {
                     "quantity": "1",
-                    "name": " and 1/2 tbsp oil"
+                    "measurement": "piece",
+                    "name": "lemongrass , white part grated, (Note 2)"
                 },
                 {
                     "quantity": "2",
-                    "name": "garlic cloves , minced"
-                },
-                {
-                    "quantity": "2",
-                    "name": "cm / 4/5\u2033 piece of ginger , finely grated"
-                },
-                {
-                    "quantity": "1",
-                    "name": "lemongrass , white part grated, (Note 2) \u25a2"
-                },
-                {
-                    "quantity": "2",
+                    "measurement": "pieces",
                     "name": "birds eye chillis , finely chopped (Note 3)"
                 },
                 {
                     "quantity": "175",
-                    "name": "1/2 cup (175g) laksa paste (Note 4)"
+                    "measurement": "grams",
+                    "name": "laksa paste (Note 4)"
                 },
                 {
                     "quantity": "400",
-                    "name": "g / 14 oz can coconut milk (Note 5)"
+                    "measurement": "grams",
+                    "name": "can coconut milk (Note 5)"
                 },
                 {
                     "quantity": "2",
-                    "name": "tsp fish sauce (sub soy)"
+                    "measurement": "teaspoons",
+                    "name": "fish sauce (sub soy)"
                 },
                 {
                     "quantity": "80",
-                    "name": "g / 2.5 oz bean sprouts"
+                    "measurement": "grams",
+                    "name": "bean sprouts"
                 },
                 {
                     "quantity": "80",
-                    "name": "g / 2.5 oz tofu puffs , cut in half (Note 7)"
+                    "measurement": "grams",
+                    "name": "tofu puffs , cut in half (Note 7)"
+                },
+                {
+                    "quantity": "0.5",
+                    "measurement": "teaspoon",
+                    "name": "sugar , white"
+                },
+                {
+                    "quantity": "1.5",
+                    "measurement": "teaspoons",
+                    "name": "soy sauce , light or all purpose"
+                },
+                {
+                    "quantity": "0.5",
+                    "measurement": "cloves",
+                    "name": "garlic , minced"
+                },
+                {
+                    "quantity": "1.5",
+                    "measurement": "teaspoons",
+                    "name": "Laksa paste (Note 4)"
                 },
                 {
                     "quantity": "1",
-                    "name": "1/2 tsp sugar , white"
+                    "measurement": "tablespoon",
+                    "name": "Sriracha sauce , or other chilli sauce"
                 },
                 {
                     "quantity": "1",
-                    "name": "and 1/2 tsp soy sauce , light or all purpose"
+                    "measurement": "tablespoon",
+                    "name": "chilli paste from jar , or more Sriracha"
                 },
                 {
                     "quantity": "1",
-                    "name": "1/2 garlic clove , minced"
+                    "measurement": "tablespoon",
+                    "name": "vegetable oil (any plain oil)"
                 },
                 {
                     "quantity": "1",
-                    "name": " and 1/2 tsp Laksa paste (Note 4)"
-                },
-                {
-                    "quantity": "1",
-                    "name": "tbsp Sriracha sauce , or other chilli sauce"
-                },
-                {
-                    "quantity": "1",
-                    "name": "tbsp chilli paste from jar , or more Sriracha"
-                },
-                {
-                    "quantity": "1",
-                    "name": "tbsp vegetable oil (any plain oil)"
-                },
-                {
-                    "quantity": "1",
+                    "measurement": "to serve",
                     "name": "Fresh coriander / cilantro (recommended)"
                 },
                 {
                     "quantity": "1",
+                    "measurement": "to serve",
                     "name": "Lime wedges (recommended)"
                 }
             ],
@@ -1727,64 +1920,79 @@
             "name": "Easy chicken korma recipe",
             "ingredients": [
                 {
-                    "quantity": "4",
-                    "name": "British chicken breast fillets (around 600g)"
+                    "quantity": "600",
+                    "measurement": "grams",
+                    "name": "British chicken breast fillets"
                 },
                 {
                     "quantity": "2",
-                    "name": " tbsp sunflower or vegetable oil"
+                    "measurement": "tablespoons",
+                    "name": "sunflower or vegetable oil"
                 },
                 {
                     "quantity": "40",
-                    "name": "g butter"
+                    "measurement": "grams",
+                    "name": "butter"
                 },
                 {
                     "quantity": "2",
+                    "measurement": "pieces",
                     "name": "brown onions, coarsely grated or very finely chopped"
                 },
                 {
                     "quantity": "4",
-                    "name": "tsp ginger and garlic paste"
+                    "measurement": "teaspoons",
+                    "name": "ginger and garlic paste"
                 },
                 {
                     "quantity": "2",
-                    "name": "tsp ground cumin"
+                    "measurement": "teaspoons",
+                    "name": "ground cumin"
                 },
                 {
                     "quantity": "2",
-                    "name": "tsp ground coriander"
+                    "measurement": "teaspoons",
+                    "name": "ground coriander"
                 },
                 {
                     "quantity": "1",
-                    "name": "tsp ground turmeric"
+                    "measurement": "teaspoon",
+                    "name": "ground turmeric"
                 },
                 {
                     "quantity": "1",
-                    "name": "\u00bc tsp mild chilli powder"
+                    "measurement": "teaspoon",
+                    "name": "mild chilli powder"
                 },
                 {
                     "quantity": "2",
-                    "name": "tbsp mango chutney or 2 tsp caster sugar"
+                    "measurement": "tablespoons",
+                    "name": "mango chutney or 2 tsp caster sugar"
                 },
                 {
                     "quantity": "300",
-                    "name": "ml hot chicken stock"
+                    "measurement": "ml",
+                    "name": "hot chicken stock"
                 },
                 {
                     "quantity": "100",
-                    "name": "ml double cream"
+                    "measurement": "ml",
+                    "name": "double cream"
                 },
                 {
                     "quantity": "2",
-                    "name": "tbsp toasted flaked almonds, to garnish (optional)"
+                    "measurement": "tablespoons",
+                    "name": "toasted flaked almonds, to garnish (optional)"
                 },
                 {
                     "quantity": "1",
-                    "name": "fresh coriander leaves, to garnish (optional)"
+                    "measurement": "to garnish",
+                    "name": "fresh coriander leaves (optional)"
                 },
                 {
                     "quantity": "1",
-                    "name": "basmati rice, cooked to pack instructions, to serve"
+                    "measurement": "to serve",
+                    "name": "basmati rice, cooked to pack instructions"
                 }
             ],
             "cuisine": "Indian",
@@ -1804,43 +2012,53 @@
             "ingredients": [
                 {
                     "quantity": "1",
-                    "name": "tbsp vegetable oil"
+                    "measurement": "tablespoon",
+                    "name": "vegetable oil"
                 },
                 {
                     "quantity": "2",
-                    "name": "tbsp Thai green curry paste (according to taste)"
+                    "measurement": "tablespoons",
+                    "name": "Thai green curry paste (according to taste)"
                 },
                 {
                     "quantity": "1",
-                    "name": "tbsp soft dark brown sugar"
+                    "measurement": "tablespoon",
+                    "name": "soft dark brown sugar"
                 },
                 {
                     "quantity": "1",
+                    "measurement": "piece",
                     "name": "thick stalks lemongrass, fat ends bashed with a rolling pin (optional)"
                 },
                 {
                     "quantity": "750",
-                    "name": "g/1\u00bdlb skinless, boneless chicken chicken breast, cut into chunks"
+                    "measurement": "grams",
+                    "name": "skinless, boneless chicken chicken breast, cut into chunks"
                 },
                 {
                     "quantity": "6",
+                    "measurement": "pieces",
                     "name": "makrut lime leaves, torn into pieces (if unavailable, use the grated zest of 1 lime)"
                 },
                 {
                     "quantity": "400",
-                    "name": "ml tin coconut milk"
+                    "measurement": "ml",
+                    "name": "tin coconut milk"
                 },
                 {
                     "quantity": "1",
-                    "name": "good shake of Thai fish sauce or light soy sauce"
+                    "measurement": "good shake",
+                    "name": "Thai fish sauce or light soy sauce"
                 },
                 {
                     "quantity": "1",
-                    "name": "large handful of coriander, roughly chopped"
+                    "measurement": "large handful",
+                    "name": "coriander, roughly chopped"
                 },
                 {
                     "quantity": "1",
-                    "name": "\u00bd\u20131 lime, juice only"
+                    "measurement": "piece",
+                    "name": "lime, juice only"
                 }
             ],
             "cuisine": "Thai",
@@ -1859,75 +2077,93 @@
             "ingredients": [
                 {
                     "quantity": "3",
-                    "name": "tablespoons olive oil"
+                    "measurement": "tablespoons",
+                    "name": "olive oil"
                 },
                 {
                     "quantity": "2",
+                    "measurement": "pieces",
                     "name": "medium onions finely chopped"
                 },
                 {
                     "quantity": "450",
-                    "name": "g ground beef lamb or chicken"
+                    "measurement": "grams",
+                    "name": "ground beef lamb or chicken"
                 },
                 {
                     "quantity": "1",
-                    "name": "tablespoon ginger paste"
+                    "measurement": "tablespoon",
+                    "name": "ginger paste"
                 },
                 {
                     "quantity": "1",
-                    "name": "tablespoon garlic paste"
+                    "measurement": "tablespoon",
+                    "name": "garlic paste"
                 },
                 {
                     "quantity": "2",
-                    "name": "teaspoons garam masala"
+                    "measurement": "teaspoons",
+                    "name": "garam masala"
                 },
                 {
                     "quantity": "1",
-                    "name": "teaspoon Kashmiri red chili powder see note"
+                    "measurement": "teaspoon",
+                    "name": "Kashmiri red chili powder see note"
                 },
                 {
                     "quantity": "1",
-                    "name": "teaspoon turmeric"
+                    "measurement": "teaspoon",
+                    "name": "turmeric"
                 },
                 {
                     "quantity": "1",
-                    "name": "teaspoon salt adjust to taste"
+                    "measurement": "teaspoon",
+                    "name": "salt adjust to taste"
                 },
                 {
                     "quantity": "1",
-                    "name": "\u00bd teaspoon black pepper"
+                    "measurement": "teaspoon",
+                    "name": "black pepper"
                 },
                 {
                     "quantity": "2",
-                    "name": "tablespoons tomato paste"
+                    "measurement": "tablespoons",
+                    "name": "tomato paste"
                 },
                 {
                     "quantity": "184",
-                    "name": "g plain yogurt reduced fat, whisked"
+                    "measurement": "grams",
+                    "name": "plain yogurt reduced fat, whisked"
                 },
                 {
                     "quantity": "2",
+                    "measurement": "pieces",
                     "name": "green chilies finely chopped, seeds removed for less heat, or Serrano/jalape\u00f1o"
                 },
                 {
                     "quantity": "295",
-                    "name": "ml beef stock low sodium, or water"
+                    "measurement": "ml",
+                    "name": "beef stock low sodium, or water"
                 },
                 {
                     "quantity": "455",
-                    "name": "g yellow potatoes peeled and diced"
+                    "measurement": "grams",
+                    "name": "yellow potatoes peeled and diced"
                 },
                 {
                     "quantity": "20",
-                    "name": "g cilantro leaves chopped"
+                    "measurement": "grams",
+                    "name": "cilantro leaves chopped"
                 },
                 {
                     "quantity": "10",
-                    "name": "g fenugreek leaves or mint leaves, chopped or 1 tablespoon dried"
+                    "measurement": "grams",
+                    "name": "fenugreek leaves or mint leaves, chopped or 1 tablespoon dried"
                 },
                 {
                     "quantity": "1",
-                    "name": "tablespoon lemon juice optional"
+                    "measurement": "tablespoon",
+                    "name": "lemon juice optional"
                 }
             ],
             "cuisine": "Indian",
@@ -1950,27 +2186,33 @@
             "ingredients": [
                 {
                     "quantity": "1",
+                    "measurement": "piece",
                     "name": "large cauliflower (leaves cut off), broken into pieces"
                 },
                 {
                     "quantity": "500",
-                    "name": "ml milk"
+                    "measurement": "ml",
+                    "name": "milk"
                 },
                 {
                     "quantity": "4",
-                    "name": "tbsp flour"
+                    "measurement": "tablespoons",
+                    "name": "flour"
                 },
                 {
                     "quantity": "50",
-                    "name": "g butter"
+                    "measurement": "grams",
+                    "name": "butter"
                 },
                 {
                     "quantity": "100",
-                    "name": "g strong cheddar grated"
+                    "measurement": "grams",
+                    "name": "strong cheddar grated"
                 },
                 {
                     "quantity": "2",
-                    "name": "tbsp breadcrumbs if you have them"
+                    "measurement": "tablespoons",
+                    "name": "breadcrumbs if you have them"
                 }
             ],
             "cuisine": "British",
@@ -1991,43 +2233,63 @@
             "ingredients": [
                 {
                     "quantity": "2500",
-                    "name": "g boneless unsmoked gammon joint tied"
+                    "measurement": "grams",
+                    "name": "boneless unsmoked gammon joint tied"
                 },
                 {
                     "quantity": "1",
+                    "measurement": "piece",
                     "name": "sprig thyme 2 bay leaves and 1 rosemary sprig tied together"
                 },
                 {
+                    "quantity": "2",
+                    "measurement": "piece",
+                    "name": "bay leaves and 1 rosemary sprig tied together"
+                },
+                {
                     "quantity": "1",
+                    "measurement": "piece",
+                    "name": "rosemary sprig"
+                },
+                {
+                    "quantity": "1",
+                    "measurement": "piece",
                     "name": "onion halved"
                 },
                 {
                     "quantity": "2",
+                    "measurement": "pieces",
                     "name": "carrots roughly chopped"
                 },
                 {
                     "quantity": "1",
-                    "name": "celery stick roughly chopped"
+                    "measurement": "stick",
+                    "name": "celery roughly chopped"
                 },
                 {
                     "quantity": "1",
-                    "name": "tbsp black peppercorns"
+                    "measurement": "tablespoon",
+                    "name": "black peppercorns"
                 },
                 {
                     "quantity": "1",
-                    "name": "tsp cloves"
+                    "measurement": "teaspoon",
+                    "name": "cloves"
                 },
                 {
-                    "quantity": "1",
-                    "name": "and 1/2 tbsp English mustard"
+                    "quantity": "1.5",
+                    "measurement": "tablespoons",
+                    "name": "English mustard"
                 },
                 {
                     "quantity": "70",
-                    "name": "g clear honey"
+                    "measurement": "grams",
+                    "name": "clear honey"
                 },
                 {
                     "quantity": "2",
-                    "name": "tbsp soft dark brown sugar"
+                    "measurement": "tablespoons",
+                    "name": "soft dark brown sugar"
                 }
             ],
             "cuisine": "British",
@@ -2045,43 +2307,53 @@
             "ingredients": [
                 {
                     "quantity": "2",
-                    "name": "pounds salmon fillet"
+                    "measurement": "pounds",
+                    "name": "salmon fillet"
                 },
                 {
                     "quantity": "1",
+                    "measurement": "to taste",
                     "name": "Kosher salt"
                 },
                 {
                     "quantity": "1",
+                    "measurement": "piece",
                     "name": "large lemon"
                 },
                 {
                     "quantity": "1",
-                    "name": "Chopped parsley, for garnish"
+                    "measurement": "to garnish",
+                    "name": "Chopped parsley"
                 },
                 {
                     "quantity": "2",
+                    "measurement": "pieces",
                     "name": "large lemons"
                 },
                 {
                     "quantity": "3",
-                    "name": "tablespoons extra virgin olive oil"
+                    "measurement": "tablespoons",
+                    "name": "extra virgin olive oil"
                 },
                 {
                     "quantity": "5",
-                    "name": "garlic cloves, chopped"
+                    "measurement": "cloves",
+                    "name": "garlic, chopped"
                 },
                 {
                     "quantity": "2",
-                    "name": "teaspoon dried oregano"
+                    "measurement": "teaspoons",
+                    "name": "dried oregano"
                 },
                 {
                     "quantity": "1",
-                    "name": "teaspoon sweet paprika"
+                    "measurement": "teaspoon",
+                    "name": "sweet paprika"
                 },
                 {
-                    "quantity": "1",
-                    "name": "1/2 teaspoon black pepper"
+                    "quantity": "0.5",
+                    "measurement": "teaspoon",
+                    "name": "black pepper"
                 }
             ],
             "cuisine": "General",
@@ -2103,50 +2375,59 @@
             "ingredients": [
                 {
                     "quantity": "2",
-                    "name": "pounds baby back pork ribs"
+                    "measurement": "pounds",
+                    "name": "baby back pork ribs"
                 },
                 {
                     "quantity": "1",
-                    "name": "tablespoon olive oil"
+                    "measurement": "tablespoon",
+                    "name": "olive oil"
+                },
+                {
+                    "quantity": "0.25",
+                    "measurement": "cup",
+                    "name": "finely diced onion"
+                },
+                {
+                    "quantity": "0.5",
+                    "measurement": "teaspoon",
+                    "name": "ground cumin"
+                },
+                {
+                    "quantity": "0.5",
+                    "measurement": "cup",
+                    "name": "ketchup"
                 },
                 {
                     "quantity": "1",
-                    "name": "1/4 cup finely diced onion"
-                },
-                {
-                    "quantity": "1",
-                    "name": "1/2 teaspoon ground cumin"
-                },
-                {
-                    "quantity": "1",
-                    "name": "1/2 cup ketchup"
-                },
-                {
-                    "quantity": "1",
-                    "name": "tablespoon hot chili sauce like Sriracha"
+                    "measurement": "tablespoon",
+                    "name": "hot chili sauce like Sriracha"
                 },
                 {
                     "quantity": "2",
-                    "name": "tablespoons light brown sugar"
+                    "measurement": "tablespoons",
+                    "name": "light brown sugar"
                 },
                 {
                     "quantity": "1",
-                    "name": "tablespoon apple cider vinegar"
+                    "measurement": "tablespoon",
+                    "name": "apple cider vinegar"
                 },
                 {
                     "quantity": "1",
-                    "name": "Salt and ground pepper, to taste"
+                    "measurement": "to taste",
+                    "name": "Salt and ground pepper"
                 }
             ],
             "cuisine": "American",
             "weight": 1,
             "link": "https://www.inspiredtaste.net/7179/sweet-and-spicy-oven-baked-ribs/",
             "instructions": [
-                "Preheat the oven to 275\u00b0F (135\u00b0C). Set aside a large roasting pan or rimmed baking sheet and foil.",
+                "Preheat the oven to 275F (135C). Set aside a large roasting pan or rimmed baking sheet and foil.",
                 "If your ribs still have the thin membrane covering the back of the rack, remove it. The tips section below explains how.",
                 "Season both sides of the ribs generously with salt and pepper. If you are using a spice rub, rub it over the ribs.",
                 "Place the ribs, meatiest-side up, in a large roasting pan. You may need to cut the ribs in half to fit them into the pan. Cover the pan or baking sheet tightly with aluminum foil. It is important they are well sealed inside the foil. If your foil does not wrap all the way around your baking sheet, wrap the rack in tight foil packets and place them on the baking sheet.",
-                "Bake the ribs until the meat falls easily from the bones, 2 \u00bd to 3 \u00bd hours. I check the ribs after 2 hours to see how they\u2019re doing. Ribs are ready to come out of the oven when the meat is cooked through and tender. To check, pierce them with a sharp knife. There should be little to no resistance. You can also gently bend the ribs. If the meat looks like it will easily pull away from the bone, they\u2019re ready.",
+                "Bake the ribs until the meat falls easily from the bones, 2 to 3 hours. I check the ribs after 2 hours to see how they are doing. Ribs are ready to come out of the oven when the meat is cooked through and tender. To check, pierce them with a sharp knife. There should be little to no resistance. You can also gently bend the ribs. If the meat looks like it will easily pull away from the bone, they are ready.",
                 "Make Homemade BBQ Sauce: While the ribs bake in the oven, make the barbecue sauce. Heat the olive oil in a saucepan over medium heat. Add the onions and cook until soft and translucent, 5 to 8 minutes.",
                 "Stir in the cumin and cook for an additional 30 seconds.",
                 "Add the ketchup, hot chili sauce, brown sugar, and apple cider vinegar. Stir to combine, season with salt, then cook for 2 minutes. Set aside while the ribs finish baking.",
@@ -2160,27 +2441,33 @@
             "ingredients": [
                 {
                     "quantity": "4",
+                    "measurement": "pieces",
                     "name": "sweet potatoes medium size, orange or red color"
                 },
                 {
                     "quantity": "4",
-                    "name": "tablespoons olive oil"
+                    "measurement": "tablespoons",
+                    "name": "olive oil"
                 },
                 {
                     "quantity": "3",
-                    "name": "tablespoons corn starch"
+                    "measurement": "tablespoons",
+                    "name": "corn starch"
+                },
+                {
+                    "quantity": "0.5",
+                    "measurement": "teaspoons",
+                    "name": "salt additional salt for seasoning the cooked fries"
+                },
+                {
+                    "quantity": "0.25",
+                    "measurement": "teaspoon",
+                    "name": "pepper additional pepper for seasoning the cooked fries"
                 },
                 {
                     "quantity": "1",
-                    "name": "1/2 teaspoon salt additional salt for seasoning the cooked fries"
-                },
-                {
-                    "quantity": "1",
-                    "name": "1/4 teaspoon pepper additional pepper for seasoning the cooked fries"
-                },
-                {
-                    "quantity": "1",
-                    "name": "\u25a2chopped parsley for garnish optional"
+                    "measurement": "to garnish",
+                    "name": "chopped parsley (optional)"
                 }
             ],
             "cuisine": "British",
@@ -2207,43 +2494,53 @@
             "ingredients": [
                 {
                     "quantity": "1",
+                    "measurement": "piece",
                     "name": "red onion, sliced"
                 },
                 {
                     "quantity": "1",
+                    "measurement": "piece",
                     "name": "red peppers, sliced"
                 },
                 {
                     "quantity": "4",
+                    "measurement": "pieces",
                     "name": "large vine tomatoes"
                 },
                 {
                     "quantity": "2",
+                    "measurement": "pieces",
                     "name": "red chillies, finely sliced"
                 },
                 {
                     "quantity": "2",
-                    "name": "garlic cloves, crushed"
+                    "measurement": "cloves",
+                    "name": "garlic, crushed"
                 },
                 {
                     "quantity": "3",
-                    "name": "tbsp olive oil, plus extra to drizzle"
+                    "measurement": "tablespoons",
+                    "name": "olive oil, plus extra to drizzle"
                 },
                 {
                     "quantity": "1",
-                    "name": "kg chicken wings"
+                    "measurement": "kg",
+                    "name": "chicken wings"
                 },
                 {
                     "quantity": "2",
-                    "name": "tbsp clear honey"
+                    "measurement": "tablespoons",
+                    "name": "clear honey"
                 },
                 {
                     "quantity": "1",
-                    "name": "tbsp Cajun seasoning"
+                    "measurement": "tablespoons",
+                    "name": "Cajun seasoning"
                 },
                 {
                     "quantity": "1",
-                    "name": "\u00bd tsp paprika"
+                    "measurement": "teaspoon",
+                    "name": "paprika"
                 }
             ],
             "cuisine": "American",
@@ -2264,59 +2561,73 @@
             "ingredients": [
                 {
                     "quantity": "1",
-                    "name": "tbsp olive oil"
+                    "measurement": "tablespoon",
+                    "name": "olive oil"
                 },
                 {
                     "quantity": "1",
+                    "measurement": "piece",
                     "name": "red onion, finely chopped"
                 },
                 {
                     "quantity": "2",
-                    "name": "garlic cloves, crushed"
+                    "measurement": "cloves",
+                    "name": "garlic, crushed"
                 },
                 {
                     "quantity": "1",
+                    "measurement": "piece",
                     "name": "large carrot, peeled and roughly chopped"
                 },
                 {
                     "quantity": "2",
-                    "name": "sticks celery, sliced"
+                    "measurement": "sticks",
+                    "name": "celery, sliced"
                 },
                 {
                     "quantity": "600",
-                    "name": "ml hot vegetable stock, made with 1 stock cube"
+                    "measurement": "ml",
+                    "name": "hot vegetable stock, made with 1 stock cube"
                 },
                 {
                     "quantity": "200",
-                    "name": "ml red wine"
+                    "measurement": "ml",
+                    "name": "red wine"
                 },
                 {
                     "quantity": "400",
-                    "name": "g tin chopped tomatoes"
+                    "measurement": "grams",
+                    "name": "tin chopped tomatoes"
                 },
                 {
                     "quantity": "1",
-                    "name": "tbsp dried oregano"
+                    "measurement": "tablespoon",
+                    "name": "dried oregano"
                 },
                 {
                     "quantity": "75",
-                    "name": "g shredded curly kale"
+                    "measurement": "grams",
+                    "name": "shredded curly kale"
                 },
                 {
                     "quantity": "200",
-                    "name": "g cannellini beans, drained"
+                    "measurement": "grams",
+                    "name": "cannellini beans, drained"
                 },
                 {
                     "quantity": "400",
-                    "name": "g pack gnocchi"
+                    "measurement": "grams",
+                    "name": "pack gnocchi"
                 },
                 {
                     "quantity": "15",
-                    "name": "g basil, chopped (reserving a few leaves to garnish)"
+                    "measurement": "grams",
+                    "name": "basil, chopped (reserving a few leaves to garnish)"
                 },
                 {
                     "quantity": "1",
-                    "name": "Parmesan shavings, to serve"
+                    "measurement": "to serve",
+                    "name": "Parmesan shavings"
                 }
             ],
             "cuisine": "Italian",

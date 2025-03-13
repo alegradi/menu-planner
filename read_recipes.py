@@ -16,7 +16,7 @@ with open('recipes/dessert_recipes.json', 'r', encoding='utf-8') as file:
 
 with open('recipes/bread_recipes.json', 'r', encoding='utf-8') as file:
     file_breads = json.load(file)
-    breads = file_breads["recipes"]
+    bread = file_breads["recipes"]
 
 
 ## Debug Information
