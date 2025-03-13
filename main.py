@@ -222,7 +222,7 @@ def make_list():
     shopping_list = [{"name": name, "quantity": quantity}
                      for name, quantity in shopping_dict.items()]
 
-    sorted_list = {category: [] for category in CATEGORIES.keys()}
+    sorted_list = {category: [] for category in CATEGORIES}
     sorted_list["Uncategorised"] = []  # For items not found in any category
 
     # Categorise items
