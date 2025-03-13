@@ -267,7 +267,9 @@ def add_recipes():
             ingredient_quantity = request.form.get(f'ingredients[{index}][quantity]')
             ingredient_measurement = request.form.get(f'ingredients[{index}][measurement]')
             ingredient_name = request.form.get(f'ingredients[{index}][name]')
-            list_ingredients.append({'quantity': ingredient_quantity, 'measurement': ingredient_measurement, 'name': ingredient_name})
+            list_ingredients.append({'quantity': ingredient_quantity,
+                                     'measurement': ingredient_measurement,
+                                     'name': ingredient_name})
             index += 1
             # print(index, list_ingredients)
         # Create the recipe dictionary as per the required format
