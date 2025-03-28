@@ -92,5 +92,6 @@ fridge_freezer = [
     "mascarpone", "greek yogurt", "gouda", "brie", "camembert", "blue cheese",
     "stilton", "manchego", "gruyère", "emmental", "chevre", "ricotta salata",
     "pecorino", "burrata", "colby", "munster", "havarti", "swiss cheese",
-    "cheddar", "mild cheddar", "mature cheddar", "asiago", "fontina", "jarlsberg", "quark", "cottage cheese"
+    "cheddar", "mild cheddar", "mature cheddar", "asiago", "fontina",
+    "jarlsberg", "quark", "cottage cheese"
 ]

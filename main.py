@@ -221,7 +221,6 @@ def make_list():
     """
     Generates a sorted shopping list based on recipes in global_menu.
     """
-    global global_menu
     shopping_dict = {}  # Store ingredient quantities and measurements
     ingredients = []
     ingredient_list = []
