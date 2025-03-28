@@ -5,13 +5,13 @@ be ignored when processing ingredient names.
 """
 
 # config.py
-from categories import vegetables, fruits, meats, spices, aisle_products, fridge_freezer
+from categories import vegetables, fruits, meats_fish, spices, aisle_products, fridge_freezer
 
 # Define category dictionary
 CATEGORIES = {
     "Vegetables": [item.lower() for item in vegetables],
     "Fruits": [item.lower() for item in fruits],
-    "Meats": [item.lower() for item in meats],
+    "Meats": [item.lower() for item in meats_fish],
     "Spices": [item.lower() for item in spices],
     "Pantry & Dry Goods": [item.lower() for item in aisle_products],
     "Fridge & Freezer": [item.lower() for item in fridge_freezer]

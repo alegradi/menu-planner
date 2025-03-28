@@ -36,7 +36,7 @@ fruits = [
     "lime", "lemon"
 ]
 
-meats = [
+meats_fish = [
     "chicken breast", "chicken thigh", "chicken drumstick", "chicken wing",
     "beef steak", "ground beef", "beef rib", "beef shoulder", "beef brisket",
     "pork chop", "pork tenderloin", "bacon", "pork loin", "pork belly",
@@ -45,7 +45,12 @@ meats = [
     "beef sausage", "duck", "venison", "goat", "rabbit", "beef mince",
     "lamb shoulder", "pork fillet", "beef rump", "pork neck", "lamb rack",
     "boneless skinless chicken thigh", "pork rib", "beef mince", "pancetta",
-    "beef", "chicken", "pork", "lamb"
+    "beef", "chicken", "pork", "lamb",
+    "salmon", "tuna", "cod", "trout", "halibut", "sardines", "mackerel",
+    "tilapia", "bass", "herring", "pollock", "flounder", "snapper", "sole",
+    "catfish", "mahi mahi", "anchovies", "rainbow trout", "yellowtail", "swordfish",
+    "sea bass", "carp", "grouper", "perch", "red snapper", "wahoo", "kingfish",
+    "whitefish", "bluefish", "fish fillet", "fish steak", "fish head"
 ]
 
 spices = [
@@ -60,7 +65,7 @@ spices = [
     "harissa", "taco seasoning", "dried mint", "dried chili flake", "mace",
     "lemon zest", "lime zest", "annatto", "chili flake", "kala jeera",
     "turmeric root", "paprika", "szechuan peppercorn", "bay leaf",
-    "smoked paprika", "oregano", "black pepper", "red pepper"
+    "smoked paprika", "oregano", "black pepper", "red pepper", "cilantro"
 ]
 
 aisle_products = [
