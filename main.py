@@ -5,7 +5,6 @@ Where it all comes together
 import json
 import os
 import re
-from data import CATEGORIES, STOP_WORDS  # Import necessary data
 from flask import Flask, jsonify, render_template, request, redirect, url_for, flash, session
 from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
@@ -13,6 +12,7 @@ from wtforms import StringField, SelectField, SubmitField
 from wtforms.validators import DataRequired
 from build_menu import build_main_menu, bread_suggestion
 from save_recipe import save_recipe
+from data import CATEGORIES, STOP_WORDS  # Import necessary data
 
 
 
@@ -265,7 +265,8 @@ def make_list():
         """Convert plural words to singular (basic approach)."""
         if word.endswith("es"):  # Handle plural ending in "es" (e.g., tomatoes -> tomato)
             return word[:-2]
-        elif word.endswith("s") and not word.endswith("ss"):  # Handle regular plural (e.g., apples -> apple)
+        if word.endswith("s") and not word.endswith("ss"):
+            # Handle regular plural (e.g., apples -> apple)
             return word[:-1]
         return word
 

@@ -12,9 +12,13 @@ CATEGORIES = {
 }
 
 # Define common stop words
-STOP_WORDS = {"see note", "coarsely", "grated","and", "very", "finely", "chopped", "sliced", "diced",
-              "crushed", "peeled", "shredded", "fresh", "ground", "to taste", "optional",
-              "well stirred", "juice only", "diced", "chopped", "roughly chopped",
-              "cut into chunks", "bashed with a rolling pin", "to taste", "optional",
-              "fat ends", "torn into pieces", "if unavailable, use the grated zest of 1 lime",
-              "if unavailable, use the zest of 1 lime","to serve", "boneless", "skinless"}
+STOP_WORDS = {"see note", "coarsely", "grated","and", "very", "finely",
+              "chopped", "sliced", "diced",
+              "crushed", "peeled", "shredded", "fresh",
+              "ground", "to taste", "optional",
+              "well stirred", "juice only", "diced", "chopped",
+              "roughly chopped","cut into chunks", "bashed with a rolling pin",
+              "to taste", "optional","fat ends", "torn into pieces",
+              "if unavailable, use the grated zest of 1 lime",
+              "if unavailable, use the zest of 1 lime","to serve",
+              "boneless", "skinless"}
