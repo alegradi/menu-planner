@@ -11,7 +11,7 @@ from categories import vegetables, fruits, meats_fish, spices, aisle_products, f
 CATEGORIES = {
     "Vegetables": [item.lower() for item in vegetables],
     "Fruits": [item.lower() for item in fruits],
-    "Meats": [item.lower() for item in meats_fish],
+    "Meats & Fish": [item.lower() for item in meats_fish],
     "Spices": [item.lower() for item in spices],
     "Pantry & Dry Goods": [item.lower() for item in aisle_products],
     "Fridge & Freezer": [item.lower() for item in fridge_freezer]

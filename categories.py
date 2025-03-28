@@ -65,7 +65,8 @@ spices = [
     "harissa", "taco seasoning", "dried mint", "dried chili flake", "mace",
     "lemon zest", "lime zest", "annatto", "chili flake", "kala jeera",
     "turmeric root", "paprika", "szechuan peppercorn", "bay leaf",
-    "smoked paprika", "oregano", "black pepper", "red pepper", "cilantro"
+    "smoked paprika", "oregano", "black pepper", "red pepper", "cilantro",
+    "lemongrass"
 ]
 
 aisle_products = [
