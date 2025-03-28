@@ -319,843 +319,6 @@
             ]
         },
         {
-            "name": "Butter bean and tomato stew with garlic bread",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "Italian",
-            "weight": 3,
-            "link": "https://realfood.tesco.com/recipes/butter-bean-and-tomato-stew-with-garlic-bread.html",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Pea & ham soup",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "British",
-            "weight": 2,
-            "link": "https://www.bbcgoodfood.com/recipes/pea-ham-soup",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Meatball Pasta Bake",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "Italian",
-            "weight": 2,
-            "link": "https://www.dontgobaconmyheart.co.uk/meatball-pasta-bake/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Cottage pie",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "British",
-            "weight": 3,
-            "link": "https://www.bbcgoodfood.com/recipes/cottage-pie",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Irish Beef and Guinness Stew",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "Irish",
-            "weight": 4,
-            "link": "https://www.recipetineats.com/irish-beef-and-guinness-stew/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Easy Pressure Cooker Pulled Pork",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "General",
-            "weight": 3,
-            "link": "https://www.pressurecookingtoday.com/easy-pressure-cooker-pulled-pork/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Lamb Chops with Garlic Mint Sauce",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "General",
-            "weight": 1,
-            "link": "https://www.jocooks.com/recipes/lamb-chops-with-garlic-mint-sauce/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Instant Pot Pork Shoulder",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "General",
-            "weight": 3,
-            "link": "https://www.pressurecookrecipes.com/instant-pot-pork-shoulder/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Cheesy Potato Bake",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "British",
-            "weight": 3,
-            "link": "https://www.sugarsaltmagic.com/cheesy-loaded-potato-bake/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Potatoes au Gratin (Dauphinoise)",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "French",
-            "weight": 2,
-            "link": "https://www.recipetineats.com/potatoes-au-gratin/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Instant Pot Mac and Cheese",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "American",
-            "weight": 3,
-            "link": "https://www.thepioneerwoman.com/food-cooking/recipes/a40117958/instant-pot-mac-and-cheese-recipe/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Garlic Parmesan Chicken Wings",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "General",
-            "weight": 2,
-            "link": "https://allthehealthythings.com/garlic-parmesan-chicken-wings/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Grilled Gochujang Chicken",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "Korean",
-            "weight": 2,
-            "link": "https://mykoreankitchen.com/gochujang-chicken/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Lemon Garlic Chicken",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "General",
-            "weight": 2,
-            "link": "https://www.themediterraneandish.com/lemon-garlic-chicken/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Oven Pork Ribs with Barbecue Sauce",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "American",
-            "weight": 2,
-            "link": "https://www.recipetineats.com/oven-baked-barbecue-pork-ribs/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Beetroot and Feta Cheese Salad",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "Greek",
-            "weight": 2,
-            "link": "https://www.scrambledchefs.com/beetroot-and-feta-cheese-salad/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Persian Chicken Wraps",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "Persian",
-            "weight": 2,
-            "link": "https://tasteandtipple.ca/persian-chicken-wraps/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Mozzarella-Stuffed Chicken Parm",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "Italian",
-            "weight": 3,
-            "link": "https://www.delish.com/cooking/recipe-ideas/recipes/a57643/mozzarella-stuffed-chicken-parm-recipe/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Italian-Style Bolognese (Rag\u00f9)",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "Italian",
-            "weight": 3,
-            "link": "https://tasty.co/recipe/italian-style-bolognese-ragu",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Mascarpone and Gorgonzola Pasta Sauce Recipe",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "Italian",
-            "weight": 2,
-            "link": "https://www.thespruceeats.com/mascarpone-and-gorgonzola-pasta-sauce-3377720",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Easy Marinara Sauce",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "Italian",
-            "weight": 3,
-            "link": "https://www.spendwithpennies.com/easy-marinara-sauce/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Orata Al Forno (Baked Sea Bream With Potatoes)",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "Italian",
-            "weight": 1,
-            "link": "https://www.food.com/recipe/orata-al-forno-baked-sea-bream-with-potatoes-184637",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Creamy Tuscan Chicken Pasta",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "Italian",
-            "weight": 3,
-            "link": "https://healthyfitnessmeals.com/tuscan-chicken-pasta/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Greek Moussaka Recipe: Eggplant Casserole",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "Greek",
-            "weight": 3,
-            "link": "https://www.themediterraneandish.com/moussaka-recipe-eggplant-casserole/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Beef Stifado recipe (Greek beef stew)",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "Greek",
-            "weight": 3,
-            "link": "https://www.mygreekdish.com/recipe/beef-stifado-mosharaki-stifado/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Fried Zucchini Spaghetti",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "Italian",
-            "weight": 1,
-            "link": "https://www.foodandwine.com/recipes/fried-zucchini-spaghetti",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Authentic Italian Lasagna Bolognese",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "Italian",
-            "weight": 3,
-            "link": "https://www.recipesfromitaly.com/lasagna-bolognese/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Greek Lamb Chops",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "Greek",
-            "weight": 1,
-            "link": "https://cafedelites.com/greek-lamb-chops/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Italian baked meatballs",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "Italian",
-            "weight": 3,
-            "link": "https://www.olivemagazine.com/recipes/meat-and-poultry/italian-baked-meatballs/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Easy Hummus",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "Middle East",
-            "weight": 2,
-            "link": "https://www.inspiredtaste.net/15938/easy-and-smooth-hummus-recipe/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
-            "name": "Pizza toppings",
-            "ingredients": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "cuisine": "Italian",
-            "weight": 1,
-            "link": "https://www.recipetineats.com/pizza-toppings/",
-            "instructions": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
-        },
-        {
             "genre": "main",
             "name": "Vegan vegetable curry recipe",
             "ingredients": [
@@ -2547,7 +1710,7 @@
             "weight": 1,
             "link": "https://realfood.tesco.com/recipes/one-tray-chicken-wings.html",
             "instructions": [
-                "Preheat the oven to gas 6, 200\u00b0C, fan 180\u00b0C. Put the red onion, peppers, tomatoes, chillies and garlic on a large tray. Drizzle with 1 tbsp olive oil and mix together.",
+                "Preheat the oven to gas 6, 200C, fan 180C. Put the red onion, peppers, tomatoes, chillies and garlic on a large tray. Drizzle with 1 tbsp olive oil and mix together.",
                 "In a large bowl, mix 1 tbsp olive oil with the honey, Cajun seasoning and paprika. Add the chicken wings and toss to coat. Tip the wings onto the baking tray so that they sit on top of the veg. Season.",
                 "Roast for 50 mins until the veg are softened and the chicken has crisped up.",
                 "Remove from the oven. Set aside the chicken wings and tip the roasted veg into a food processor, along with the remaining olive oil.",
@@ -2638,6 +1801,350 @@
                 "Stir through the vegetable stock, red wine, chopped tomatoes and oregano. Cover and cook for 20 mins, stirring occasionally.",
                 "Stir through the kale and cannellini beans and simmer uncovered for a further 5 mins. Stir through the gnocchi and chopped basil and cook for a further 2 mins. Season to taste.",
                 "Divide between 4 bowls and serve topped with shavings of Parmesan and the reserved basil leaves."
+            ]
+        },
+        {
+            "genre": "main",
+            "name": "Easy hummus",
+            "ingredients": [
+                {
+                    "quantity": "1",
+                    "measurement": "can",
+                    "name": "chickpeas"
+                },
+                {
+                    "quantity": "60",
+                    "measurement": "ml",
+                    "name": "fresh lemon juice"
+                },
+                {
+                    "quantity": "60",
+                    "measurement": "ml",
+                    "name": "well stirred tahini"
+                },
+                {
+                    "quantity": "1",
+                    "measurement": "clove",
+                    "name": "garlic"
+                },
+                {
+                    "quantity": "30",
+                    "measurement": "ml",
+                    "name": "extra-virgin olive oil"
+                },
+                {
+                    "quantity": "0.5",
+                    "measurement": "teaspoon",
+                    "name": "ground cumin"
+                },
+                {
+                    "quantity": "1",
+                    "measurement": "to taste",
+                    "name": "salt"
+                },
+                {
+                    "quantity": "45",
+                    "measurement": "ml",
+                    "name": "cold water or aquafaba"
+                },
+                {
+                    "quantity": "1",
+                    "measurement": "dash",
+                    "name": "paprika, sumac, or Za\u2019atar"
+                }
+            ],
+            "cuisine": "Middle Eastern",
+            "weight": 1,
+            "link": "https://www.inspiredtaste.net/15938/easy-and-smooth-hummus-recipe/",
+            "instructions": [
+                "In the bowl of a food processor, combine the tahini and lemon juice and process for 1 minute. Scrape the sides and bottom of the bowl, then process for 30 seconds more. This extra time helps \u201cwhip\u201d or \u201ccream\u201d the tahini, making the hummus smooth and creamy.How to Make Hummus-Recipe-Step-1",
+                "Add the olive oil, minced garlic, cumin, and a 1/2 teaspoon of salt to the whipped tahini and lemon juice. Process for 30 seconds, scrape the sides and bottom of the bowl, and then process for another 30 seconds or until well blended.",
+                "Drain the chickpeas. Then add half of the chickpeas to the food processor and process for 1 minute. Scrape the sides and bottom of the bowl, then add the remaining chickpeas and process them until thick and relatively smooth, 1 to 2 minutes.",
+                "The hummus will likely be too thick and still have tiny bits of chickpea. To fix this, slowly add 2 to 3 tablespoons of cold water or aquafaba with the food processor turned on until you reach the perfect consistency.How-to-Make-Hummus-Recipe-Step-3",
+                "Taste and adjust as needed. Serve hummus with a drizzle of olive oil and a sprinkle of paprika, sumac, or Za\u2019atar.",
+                "Store homemade hummus in an airtight container and refrigerate for up to one week. Freeze, covered with a thin layer of olive oil, for up to one month."
+            ]
+        },
+        {
+            "genre": "main",
+            "name": "Italian baked meatballs",
+            "ingredients": [
+                {
+                    "quantity": "3",
+                    "measurement": "pieces",
+                    "name": "onions"
+                },
+                {
+                    "quantity": "1",
+                    "measurement": "to fry",
+                    "name": "olive oil"
+                },
+                {
+                    "quantity": "5",
+                    "measurement": "cloves",
+                    "name": "garlic"
+                },
+                {
+                    "quantity": "3",
+                    "measurement": "pieces",
+                    "name": "bay leaves"
+                },
+                {
+                    "quantity": "400",
+                    "measurement": "g tin",
+                    "name": "chopped tomatoes"
+                },
+                {
+                    "quantity": "600",
+                    "measurement": "ml",
+                    "name": "passata"
+                },
+                {
+                    "quantity": "2",
+                    "measurement": "tablespoons",
+                    "name": "tomato pur\u00e9e"
+                },
+                {
+                    "quantity": "1",
+                    "measurement": "tablespoon",
+                    "name": "brown sugar"
+                },
+                {
+                    "quantity": "1",
+                    "measurement": "tablespoon",
+                    "name": "red wine vinegar"
+                },
+                {
+                    "quantity": "500",
+                    "measurement": "g",
+                    "name": "beef mince"
+                },
+                {
+                    "quantity": "125",
+                    "measurement": "g",
+                    "name": "fresh breadcrumbs"
+                },
+                {
+                    "quantity": "1",
+                    "measurement": "tablespoon",
+                    "name": "fennel seeds"
+                },
+                {
+                    "quantity": "1",
+                    "measurement": "tablespoon",
+                    "name": "dried oregano"
+                },
+                {
+                    "quantity": "1",
+                    "measurement": "piece",
+                    "name": "egg"
+                },
+                {
+                    "quantity": "1",
+                    "measurement": "tablespoon",
+                    "name": "dried oregano"
+                },
+                {
+                    "quantity": "1",
+                    "measurement": "piece",
+                    "name": "egg"
+                },
+                {
+                    "quantity": "250",
+                    "measurement": "g",
+                    "name": "grated mozzarella"
+                },
+                {
+                    "quantity": "100",
+                    "measurement": "g",
+                    "name": "mascarpone"
+                }
+            ],
+            "cuisine": "Italian",
+            "weight": 3,
+            "link": "https://www.olivemagazine.com/recipes/meat-and-poultry/italian-baked-meatballs/",
+            "instructions": [
+                "Put the onions and 2 tbsp oil in your biggest frying pan, and fry gently until softened. Add the garlic, then increase the heat and fry for a few minutes. Scoop half the softened onions from the pan into a large mixing bowl.",
+                "Add the bay leaves, tomatoes, passata, pur\u00e9e, brown sugar and red wine vinegar to the frying pan, and bring to a simmer. Bubble for 20 minutes until the sauce has reduced and thickened, and the surface is glistening. Season.",
+                "When the reserved onions have cooled, add the beef mince, breadcrumbs, fennel seeds, oregano and egg with plenty of seasoning. Mix everything with your hands really well, then shape into 20 meatballs. Heat 1tbsp oil in a non-stick frying pan and brown the meatballs in batches, adding more oil as you need \u2013 the meatballs should be almost cooked through. Cool. Mix 200g of the grated mozzarella with the mascarpone and a little salt.",
+                "When everything has cooled to room temperature, combine the meatballs and tomato sauce in a big baking dish. Blob over the cheesy mascarpone, and scatter over the remaining mozzarella. Freeze now.",
+                "Heat the oven to 180C/fan 160C/gas 4. Cover the dish tightly with an extra layer of foil and bake for 30 minutes, then remove the foil and bake for a further 30-45 minutes, until the meatballs are piping hot and cooked through, and the cheesy top is golden and bubbling. Let the dish cool for 5 minutes, then add a drizzle of olive oil and a scatter of fresh oregano, if you like, before spooning straight from the dish. Serve with crusty bread, pasta or rice.",
+                "*Freezing notes: Open-freeze in the baking dish until solid, but don\u2019t leave it for too long, then cover with a layer of foil, then clingfilm to keep airtight (use clingfilm on its own and you risk taking off the cheesy topping when you remove it), or freeze in individual baking dishes in the same way. The day before you want to bake them, transfer the frozen dish to the fridge. When defrosted, finish the dish as above."
+            ]
+        },
+        {
+            "genre": "main",
+            "name": "Greek Lamb Chops",
+            "ingredients": [
+                {
+                    "quantity": "65",
+                    "measurement": "ml",
+                    "name": "olive oil"
+                },
+                {
+                    "quantity": "65",
+                    "measurement": "ml",
+                    "name": "lemon juice"
+                },
+                {
+                    "quantity": "4",
+                    "measurement": "g",
+                    "name": "dried oregano"
+                },
+                {
+                    "quantity": "4",
+                    "measurement": "cloves",
+                    "name": "garlic minced"
+                },
+                {
+                    "quantity": "6",
+                    "measurement": "g",
+                    "name": "salt"
+                },
+                {
+                    "quantity": "3",
+                    "measurement": "g",
+                    "name": "cracked pepper"
+                },
+                {
+                    "quantity": "8",
+                    "measurement": "pieces",
+                    "name": "lamb chops"
+                },
+                {
+                    "quantity": "20",
+                    "measurement": "ml",
+                    "name": "olive oil"
+                }
+            ],
+            "cuisine": "Greek",
+            "weight": 1,
+            "link": "https://cafedelites.com/greek-lamb-chops/#recipe",
+            "instructions": [
+                "Using paper towels, pat dry chops and discard any shards or bone fragments.",
+                "Mix all of the ingredients together in a small jug or bowl.",
+                "Arrange lamb chops in a large baking dish or on a large plate, and pour the marinade all over the lamb, rubbing it into the meat. Cover with plastic wrap and marinate for half an hour, or for a deeper flavour, marinate overnight in the refrigerator, turning the chops from time to time (before cooking, let lamb chops sit at room temp 30 minutes).",
+                "Heat oil in a pan (cast iron preferably or grill plates) over high heat until just starting to smoke. Fry or grill lamb in 2 batches for 3-4 minutes each side, depending on thickness until done to your liking. (Usually, at 3 minutes per side they are medium, and at 4 minutes they are medium-well.)",
+                "Let rest for 5 minutes before serving.",
+                "Sprinkle with a little extra dried oregano for added flavour and a little extra lemon juice (optional)."
+            ]
+        },
+        {
+            "genre": "main",
+            "name": "Authentic Italian Lasagna Bolognese",
+            "ingredients": [
+                {
+                    "quantity": "300",
+                    "measurement": "g",
+                    "name": "beef"
+                },
+                {
+                    "quantity": "150",
+                    "measurement": "g",
+                    "name": "pancetta"
+                },
+                {
+                    "quantity": "300",
+                    "measurement": "g",
+                    "name": "passata"
+                },
+                {
+                    "quantity": "1",
+                    "measurement": "piece",
+                    "name": "carrot"
+                },
+                {
+                    "quantity": "1",
+                    "measurement": "stalk",
+                    "name": "celery"
+                },
+                {
+                    "quantity": "1",
+                    "measurement": "piece",
+                    "name": "onion"
+                },
+                {
+                    "quantity": "100",
+                    "measurement": "ml",
+                    "name": "dry white wine"
+                },
+                {
+                    "quantity": "100",
+                    "measurement": "ml",
+                    "name": "milk"
+                },
+                {
+                    "quantity": "300",
+                    "measurement": "ml",
+                    "name": "broth"
+                },
+                {
+                    "quantity": "3",
+                    "measurement": "tablespoons",
+                    "name": "extra virgin olive oil"
+                },
+                {
+                    "quantity": "1",
+                    "measurement": "to taste",
+                    "name": "salt"
+                },
+                {
+                    "quantity": "1",
+                    "measurement": "to taste",
+                    "name": "pepper"
+                },
+                {
+                    "quantity": "12",
+                    "measurement": "sheets",
+                    "name": "lasagne pasta"
+                },
+                {
+                    "quantity": "200",
+                    "measurement": "g",
+                    "name": "Parmigiano Reggiano cheese"
+                },
+                {
+                    "quantity": "1",
+                    "measurement": "litre",
+                    "name": "milk"
+                },
+                {
+                    "quantity": "100",
+                    "measurement": "g",
+                    "name": "butter"
+                },
+                {
+                    "quantity": "100",
+                    "measurement": "g",
+                    "name": "flour"
+                },
+                {
+                    "quantity": "0.5",
+                    "measurement": "teaspoon",
+                    "name": "salt"
+                },
+                {
+                    "quantity": "1",
+                    "measurement": "to taste",
+                    "name": "nutmeg"
+                }
+            ],
+            "cuisine": "Italian",
+            "weight": 3,
+            "link": "https://www.recipesfromitaly.com/lasagna-bolognese/#recipe",
+            "instructions": [
+                "Make the Bolognese Sauce",
+                "Place the minced pancetta in a saucepan. Cook on medium heat for about 5 minutes, stirring with a wooden spoon from time to time.",
+                "Add the extra virgin olive oil and the finely chopped vegetables. Stir and cook over medium heat for 5 minutes, stirring. Then add the ground beef",
+                "Stir and cook for 5 minutes over medium heat. Now put the heat on high and add the white wine. Stir and let it evaporate.",
+                "Add the tomato passata. Cover with a lid and simmer over low heat for about 2 hours, adding broth when needed. Towards the end, add the milk to dampen the acidity of the tomato. Season with salt and pepper.",
+                "Make the Bechamel Sauce",
+                "In a saucepan, melt the butter over low heat then add the flour \u2013 using a flour sieve \u2013 while mixing quickly with a whisk. Set aside and let it cool. Meanwhile heat the milk, without bringing to a boil.",
+                "Pour the milk slowly over the butter+flour, while stirring vigorously with a whisk to prevent the formation of lumps. When the milk is completely poured put the saucepan back on low heat. Keep mixing constantly, until you have a fairly thick consistency (about 10/15 minutes). Add a pinch of fine salt and grated nutmeg to taste.",
+                "Make the Layers",
+                "Spread on the bottom of a baking dish two tablespoons of bechamel. Then put lasagna noodles over it, trying to cover the entire bottom of the pan. Layer on two tablespoons of bolognese sauce and two of bechamel sauce.",
+                "Sprinkle two tablespoons of grated Parmigiano. Repeat these steps for at least five layers (lasagna \u2013 bolognese sauce \u2013 b\u00e8chamel \u2013 parmigiano -repeat), in any case up to fill your baking dish.",
+                "Cover the last layer with plenty of Parmigiano cheese. Bake at 190\u00b0C (380\u00b0F) for about 30 minutes. Let cool Lasagna Bolognese for 10 minutes before serving."
             ]
         }
     ]

@@ -4,6 +4,8 @@ Where it all comes together
 """
 import json
 import os
+import re
+from data import CATEGORIES, STOP_WORDS  # Import necessary data
 from flask import Flask, jsonify, render_template, request, redirect, url_for, flash, session
 from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
@@ -11,7 +13,8 @@ from wtforms import StringField, SelectField, SubmitField
 from wtforms.validators import DataRequired
 from build_menu import build_main_menu, bread_suggestion
 from save_recipe import save_recipe
-from data import vegetables, fruits, meats, spices, aisle_products, fridge_freezer
+
+
 
 app = Flask(__name__)
 Bootstrap(app)
@@ -27,15 +30,6 @@ sample_data = {
 
 global_menu = []
 
-# Define category dictionary
-CATEGORIES = {
-    "Vegetables": [item.lower() for item in vegetables],
-    "Fruits": [item.lower() for item in fruits],
-    "Meats": [item.lower() for item in meats],
-    "Spices": [item.lower() for item in spices],
-    "Pantry & Dry Goods": [item.lower() for item in aisle_products],
-    "Fridge & Freezer": [item.lower() for item in fridge_freezer]
-}
 
 class SearchForm(FlaskForm):
     """
@@ -197,48 +191,122 @@ def delete():
     # this is the page when opening /delete
     return render_template('delete.html',form=form)
 
-@app.route('/shopping_list')
+
+def clean_ingredient_name(raw_name):
+    """
+    Removes unnecessary descriptive words, percentage values,
+    text inside parentheses, and handles comma-separated ingredients.
+    """
+    # Remove percentage values (e.g., "85%", "93%", "85% to 93%")
+    raw_name = re.sub(r'\b\d+%(\s*to\s*\d+%)?\b', '', raw_name).strip()
+
+    # Remove unnecessary descriptive words from the ingredient name
+    stop_words_pattern = r'\b(' + '|'.join(re.escape(word) for word in STOP_WORDS) + r')\b'
+    cleaned_name = re.sub(stop_words_pattern, '', raw_name, flags=re.IGNORECASE).strip()
+
+    # Remove anything inside parentheses (including brackets)
+    cleaned_name = re.sub(r'\s*\(.*?\)\s*', ' ', cleaned_name).strip()
+
+    # Clean after the first comma (if any)
+    cleaned_name = re.split(r'\s*,\s*', cleaned_name, 1)[0]
+
+    # Remove extra spaces
+    cleaned_name = re.sub(r'\s+', ' ', cleaned_name).strip()
+
+    return cleaned_name
+
+
+@app.route('/shopping_list', methods=['GET','POST'])
 def make_list():
     """
-    Route when visiting /shopping_list
-    Returns:
-        HTML response of shopping list
+    Generates a sorted shopping list based on recipes in global_menu.
     """
-    shopping_dict = {}  # Dictionary to track quantities per ingredient
+    global global_menu
+    shopping_dict = {}  # Store ingredient quantities and measurements
+    ingredients = []
+    ingredient_list = []
 
     for recipe in global_menu:
-        for ingredient in recipe['ingredients']:
-            if ingredient:
-                ingredient_name = ingredient['name']
-                ingredient_quantity = ingredient['quantity']
+        for ingredient in recipe.get("ingredients"):  # Directly access ingredients
+            raw_name = ingredient["name"].lower()
+            measurement = ingredient["measurement"]
+            quantity = ingredient["quantity"]
+            cleaned_name = clean_ingredient_name(raw_name)
+            # print(cleaned_name)
+            ingredients.append({
+                'name': cleaned_name,
+                'measurement' : measurement,
+                'quantity' : quantity
+            })
 
-                # If ingredient already exists, add to quantity
-                if ingredient_name in shopping_dict:
-                    shopping_dict[ingredient_name] += ingredient_quantity
-                else:
-                    shopping_dict[ingredient_name] = ingredient_quantity
+# Check if ingredient already exists
+    for ingredient in ingredients:
+        if ingredient['name'] in ingredient_list:
+            if shopping_dict['cleaned_name']['measurement'] == ingredient['measurement']:
+                shopping_dict['cleaned_name']['measurement'] += ingredient['quantity']
+            else:
+                shopping_dict = {
+                    'name':ingredient['name'],
+                    'quantity': ingredient['quantity'],
+                    'measurement': ingredient['measurement']
+                }
+        else:
+            shopping_dict = {
+                    'name':ingredient['name'],
+                    'quantity': ingredient['quantity'],
+                    'measurement': ingredient['measurement']
+                }
+        ingredient_list.append(shopping_dict)
 
-    # Convert dictionary back to list of dictionaries
-    shopping_list = [{"name": name, "quantity": quantity}
-                     for name, quantity in shopping_dict.items()]
+    categorized_ingredients = {category: [] for category in CATEGORIES.keys()}
+    categorized_ingredients["Uncategorized"] = []  # For unknown ingredients
 
-    sorted_list = {category: [] for category in CATEGORIES}
-    sorted_list["Uncategorised"] = []  # For items not found in any category
+    def singularize(word):
+        """Convert plural words to singular (basic approach)."""
+        if word.endswith("es"):  # Handle plural ending in "es" (e.g., tomatoes -> tomato)
+            return word[:-2]
+        elif word.endswith("s") and not word.endswith("ss"):  # Handle regular plural (e.g., apples -> apple)
+            return word[:-1]
+        return word
 
-    # Categorise items
-    for item in shopping_list:
-        found = False
+    def is_partial_match(ingredient_name, category_items):
+        """
+        Check if any category item appears as a substring in the ingredient name.
+        Also compares singular/plural forms.
+        """
+        words = ingredient_name.split()
+        words = [singularize(word) for word in words]  # Convert words to singular form
+
+        # Check for 'stock' in combination with meat names
+        meat_keywords = ["beef", "pork", "chicken"]
+        if any(meat in words for meat in meat_keywords) and "stock" in words:
+            return "Aisle Product"  # Special case for stock-related meat items
+
+        # Regular category matching logic
+        for item in category_items:
+            singular_item = singularize(item)  # Convert category item to singular form
+            if any(singular_item in word for word in words):
+                return category_items  # Return the matched category
+
+        return None  # If no match is found, return None
+
+    for ingredient in ingredient_list:
+        ingredient_name = ingredient["name"].lower()
+        categorized = False
+
+        # Check which category the ingredient belongs to (partial matching)
         for category, items in CATEGORIES.items():
-            if item['name'] in items:
-                sorted_list[category].append(item)
-                found = True
-                break  # ✅ Stop checking once it's categorised
+            if is_partial_match(ingredient_name, items):
+                categorized_ingredients[category].append(ingredient)
+                categorized = True
+                break  # Stop checking once a match is found
 
-        if not found:
-            sorted_list["Uncategorised"].append(item)  # ✅ Only add if no category matched
+        # If no category matches, add to "Uncategorized"
+        if not categorized:
+            categorized_ingredients["Uncategorized"].append(ingredient)
 
-    print("Final Shopping List:", sorted_list)
-    return render_template("shopping_list.html", shopping_list=sorted_list)
+    return render_template('shopping_list.html', categorized_ingredients=categorized_ingredients)
+
 
 def process_webform(webform_text):
     """

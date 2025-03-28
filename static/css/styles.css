@@ -121,3 +121,6 @@ pre {
 *{
   box-sizing: border-box;
 }
+.category-header {
+  color: #b4c0f7; /* Replace with your desired color */
+}
