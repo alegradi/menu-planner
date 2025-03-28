@@ -9,8 +9,11 @@ from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
 from wtforms import StringField, SelectField, SubmitField
 from wtforms.validators import DataRequired
-from build_menu import build_main_menu
+from build_menu import build_main_menu, bread_suggestion
 from save_recipe import save_recipe
+from shopping_list import collect_ingredients, update_shopping_list, categorize_ingredients
+
+
 
 
 app = Flask(__name__)
@@ -26,6 +29,7 @@ sample_data = {
 }
 
 global_menu = []
+
 
 class SearchForm(FlaskForm):
     """
@@ -83,7 +87,8 @@ def get_recipes():
     """
     global global_menu    # pylint: disable=global-statement
     global_menu = build_main_menu()
-    return render_template('recipes.html', menu=global_menu)
+    bread_suggestion_data = bread_suggestion()
+    return render_template('recipes.html', menu=global_menu, bread=bread_suggestion_data)
 
 @app.route('/search', methods=["GET","POST"])
 def search_recipe():
@@ -104,6 +109,8 @@ def search_recipe():
             file_path = 'recipes/main_recipes.json'
         elif genre == "dessert":
             file_path = 'recipes/dessert_recipes.json'
+        elif genre == "bread":
+            file_path = 'recipes/bread_recipes.json'
 
         with open(file_path, 'r', encoding='utf-8') as file:
             data = json.load(file)
@@ -137,6 +144,8 @@ def delete():
             file_path = 'recipes/main_recipes.json'
         elif genre == "dessert":
             file_path = 'recipes/dessert_recipes.json'
+        elif genre == "bread":
+            file_path = 'recipes/bread_recipes.json'
         #check if file_path is correctly assigned
         if not file_path:
             return redirect(url_for('home'))
@@ -182,31 +191,105 @@ def delete():
     # this is the page when opening /delete
     return render_template('delete.html',form=form)
 
-@app.route('/shopping_list')
+@app.route('/shopping_list', methods=['GET','POST'])
 def make_list():
     """
-    Route when visiting /shopping_list
-    Returns:
-        HTML response of shopping list
+    Generates a sorted shopping list based on recipes in global_menu.
     """
-    shopping_dict = {}  # Dictionary to track quantities per ingredient
+    # Collect ingredients, update shopping list and categorize ingredients
+    ingredients = collect_ingredients(global_menu)
+    ingredient_list = update_shopping_list(ingredients)
+    categorized_ingredients = categorize_ingredients(ingredient_list)
 
-    for recipe in global_menu:
-        for ingredient in recipe['ingredients']:
-            if ingredient:
-                ingredient_name = ingredient['name']
-                ingredient_quantity = ingredient['quantity']
+    # Render the template with the categorized ingredients
+    return render_template('shopping_list.html', categorized_ingredients=categorized_ingredients)
+#     shopping_dict = {}  # Store ingredient quantities and measurements
+#     ingredients = []
+#     ingredient_list = []
 
-                # If ingredient already exists, add to quantity
-                if ingredient_name in shopping_dict:
-                    shopping_dict[ingredient_name] += ingredient_quantity
-                else:
-                    shopping_dict[ingredient_name] = ingredient_quantity
-    # Convert dictionary back to list of dictionaries
-    shopping_list = [{"name": name, "quantity": quantity}
-                     for name, quantity in shopping_dict.items()]
-    print("Final Shopping List:", shopping_list)
-    return render_template("shopping_list.html", shopping_list=shopping_list)
+#     for recipe in global_menu:
+#         for ingredient in recipe.get("ingredients"):  # Directly access ingredients
+#             raw_name = ingredient["name"].lower()
+#             measurement = ingredient["measurement"]
+#             quantity = ingredient["quantity"]
+#             cleaned_name = clean_ingredient_name(raw_name)
+#             # print(cleaned_name)
+#             ingredients.append({
+#                 'name': cleaned_name,
+#                 'measurement' : measurement,
+#                 'quantity' : quantity
+#             })
+
+# # Check if ingredient already exists
+#     for ingredient in ingredients:
+#         if ingredient['name'] in ingredient_list:
+#             if shopping_dict['cleaned_name']['measurement'] == ingredient['measurement']:
+#                 shopping_dict['cleaned_name']['measurement'] += ingredient['quantity']
+#             else:
+#                 shopping_dict = {
+#                     'name':ingredient['name'],
+#                     'quantity': ingredient['quantity'],
+#                     'measurement': ingredient['measurement']
+#                 }
+#         else:
+#             shopping_dict = {
+#                     'name':ingredient['name'],
+#                     'quantity': ingredient['quantity'],
+#                     'measurement': ingredient['measurement']
+#                 }
+#         ingredient_list.append(shopping_dict)
+
+#     categorized_ingredients = {category: [] for category in CATEGORIES.keys()}
+#     categorized_ingredients["Uncategorized"] = []  # For unknown ingredients
+
+#     def singularize(word):
+#         """Convert plural words to singular (basic approach)."""
+#         if word.endswith("es"):  # Handle plural ending in "es" (e.g., tomatoes -> tomato)
+#             return word[:-2]
+#         if word.endswith("s") and not word.endswith("ss"):
+#             # Handle regular plural (e.g., apples -> apple)
+#             return word[:-1]
+#         return word
+
+#     def is_partial_match(ingredient_name, category_items):
+#         """
+#         Check if any category item appears as a substring in the ingredient name.
+#         Also compares singular/plural forms.
+#         """
+#         words = ingredient_name.split()
+#         words = [singularize(word) for word in words]  # Convert words to singular form
+
+#         # Check for 'stock' in combination with meat names
+#         meat_keywords = ["beef", "pork", "chicken"]
+#         if any(meat in words for meat in meat_keywords) and "stock" in words:
+#             return "Aisle Product"  # Special case for stock-related meat items
+
+#         # Regular category matching logic
+#         for item in category_items:
+#             singular_item = singularize(item)  # Convert category item to singular form
+#             if any(singular_item in word for word in words):
+#                 return category_items  # Return the matched category
+
+#         return None  # If no match is found, return None
+
+#     def categorize_ingredients(ingredient_list):
+#         for ingredient in ingredient_list:
+#             ingredient_name = ingredient["name"].lower()
+#             categorized = False
+
+#             # Check which category the ingredient belongs to (partial matching)
+#             for category, items in CATEGORIES.items():
+#                 if is_partial_match(ingredient_name, items):
+#                     categorized_ingredients[category].append(ingredient)
+#                     categorized = True
+#                     break  # Stop checking once a match is found
+
+#             # If no category matches, add to "Uncategorized"
+#             if not categorized:
+#                 categorized_ingredients["Uncategorized"].append(ingredient)
+
+#     return render_template('shopping_list.html', categorized_ingredients=categorized_ingredients)
+
 
 def process_webform(webform_text):
     """
@@ -233,8 +316,11 @@ def add_recipes():
         while f'ingredients[{index}][quantity]' in request.form:
             # Extracting ingredient data
             ingredient_quantity = request.form.get(f'ingredients[{index}][quantity]')
+            ingredient_measurement = request.form.get(f'ingredients[{index}][measurement]')
             ingredient_name = request.form.get(f'ingredients[{index}][name]')
-            list_ingredients.append({'quantity': ingredient_quantity, 'name': ingredient_name})
+            list_ingredients.append({'quantity': ingredient_quantity,
+                                     'measurement': ingredient_measurement,
+                                     'name': ingredient_name})
             index += 1
             # print(index, list_ingredients)
         # Create the recipe dictionary as per the required format

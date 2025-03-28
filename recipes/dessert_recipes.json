@@ -4,17 +4,61 @@
             "genre": "dessert",
             "name": "Chocolate Cake",
             "ingredients": [
-                {"quantity": 2, "name":"cups flour"},
-                {"quantity": 2, "name":"cups sugar"},
-                {"quantity": 2, "name":"tsp baking powder"},
-                {"quantity": 0.75, "name":"cup cocoa powder"},
-                {"quantity": 1.5, "name":"tsp baking soda"},
-                {"quantity": 1, "name":"tsp salt"},
-                {"quantity": 1, "name":"cup milk"},
-                {"quantity": 0.5, "name":"cup vegetable oil"},
-                {"quantity": 2, "name":"eggs"},
-                {"quantity": 2, "name":"tsp vanilla extract"},
-                {"quantity": 1, "name":"cup boiling water"}
+                {
+                    "quantity": 2,
+                    "measurement": "cups",
+                    "name":"cups flour"
+                },
+                {
+                    "quantity": 2,
+                    "measurement": "cups",
+                     "name":"sugar"
+                },
+                {
+                    "quantity": 2,
+                    "measurement": "teaspoons",
+                    "name":"baking powder"
+                },
+                {
+                    "quantity": 0.75,
+                    "measurement": "cups",
+                    "name":"cocoa powder"
+                },
+                {
+                    "quantity": 1.5,
+                    "measurement": "teaspoons",
+                    "name":"baking soda"
+                },
+                {
+                    "quantity": 1,
+                    "measurement": "teaspoon",
+                    "name":"salt"
+                },
+                {
+                    "quantity": 1,
+                    "measurement": "cup",
+                    "name":"milk"
+                },
+                {
+                    "quantity": 0.5,
+                    "measurement": "cup",
+                    "name":"vegetable oil"
+                },
+                {
+                    "quantity": 2,
+                    "measurement": "pieces",
+                    "name":"eggs"
+                },
+                {
+                    "quantity": 2,
+                    "measurement": "teaspoons",
+                    "name":"vanilla extract"
+                },
+                {
+                    "quantity": 1,
+                    "measurement": "cup",
+                    "name":"boiling water"
+                }
             ],
             "instructions": [
                 "Preheat oven to 350 degrees F (175 degrees C).",
