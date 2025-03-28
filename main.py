@@ -4,7 +4,6 @@ Where it all comes together
 """
 import json
 import os
-import re
 from flask import Flask, jsonify, render_template, request, redirect, url_for, flash, session
 from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
@@ -12,7 +11,6 @@ from wtforms import StringField, SelectField, SubmitField
 from wtforms.validators import DataRequired
 from build_menu import build_main_menu, bread_suggestion
 from save_recipe import save_recipe
-from data import CATEGORIES, STOP_WORDS  # Import necessary data
 from shopping_list import collect_ingredients, update_shopping_list, categorize_ingredients
 
 
@@ -198,9 +196,6 @@ def make_list():
     """
     Generates a sorted shopping list based on recipes in global_menu.
     """
-
-    global global_menu  # Assuming global_menu is already defined
-
     # Collect ingredients, update shopping list and categorize ingredients
     ingredients = collect_ingredients(global_menu)
     ingredient_list = update_shopping_list(ingredients)

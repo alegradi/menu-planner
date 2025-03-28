@@ -1,3 +1,6 @@
+"""This is to pull all the ingredients from suggested menus,
+then sort the ingredients in an easier order/format for food shopping"""
+
 # shopping_list.py
 import re
 from data import CATEGORIES, STOP_WORDS
