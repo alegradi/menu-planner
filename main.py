@@ -13,6 +13,8 @@ from wtforms.validators import DataRequired
 from build_menu import build_main_menu, bread_suggestion
 from save_recipe import save_recipe
 from data import CATEGORIES, STOP_WORDS  # Import necessary data
+from shopping_list import collect_ingredients, update_shopping_list, categorize_ingredients
+
 
 
 
@@ -191,121 +193,107 @@ def delete():
     # this is the page when opening /delete
     return render_template('delete.html',form=form)
 
-
-def clean_ingredient_name(raw_name):
-    """
-    Removes unnecessary descriptive words, percentage values,
-    text inside parentheses, and handles comma-separated ingredients.
-    """
-    # Remove percentage values (e.g., "85%", "93%", "85% to 93%")
-    raw_name = re.sub(r'\b\d+%(\s*to\s*\d+%)?\b', '', raw_name).strip()
-
-    # Remove unnecessary descriptive words from the ingredient name
-    stop_words_pattern = r'\b(' + '|'.join(re.escape(word) for word in STOP_WORDS) + r')\b'
-    cleaned_name = re.sub(stop_words_pattern, '', raw_name, flags=re.IGNORECASE).strip()
-
-    # Remove anything inside parentheses (including brackets)
-    cleaned_name = re.sub(r'\s*\(.*?\)\s*', ' ', cleaned_name).strip()
-
-    # Clean after the first comma (if any)
-    cleaned_name = re.split(r'\s*,\s*', cleaned_name, 1)[0]
-
-    # Remove extra spaces
-    cleaned_name = re.sub(r'\s+', ' ', cleaned_name).strip()
-
-    return cleaned_name
-
-
 @app.route('/shopping_list', methods=['GET','POST'])
 def make_list():
     """
     Generates a sorted shopping list based on recipes in global_menu.
     """
-    shopping_dict = {}  # Store ingredient quantities and measurements
-    ingredients = []
-    ingredient_list = []
 
-    for recipe in global_menu:
-        for ingredient in recipe.get("ingredients"):  # Directly access ingredients
-            raw_name = ingredient["name"].lower()
-            measurement = ingredient["measurement"]
-            quantity = ingredient["quantity"]
-            cleaned_name = clean_ingredient_name(raw_name)
-            # print(cleaned_name)
-            ingredients.append({
-                'name': cleaned_name,
-                'measurement' : measurement,
-                'quantity' : quantity
-            })
+    global global_menu  # Assuming global_menu is already defined
 
-# Check if ingredient already exists
-    for ingredient in ingredients:
-        if ingredient['name'] in ingredient_list:
-            if shopping_dict['cleaned_name']['measurement'] == ingredient['measurement']:
-                shopping_dict['cleaned_name']['measurement'] += ingredient['quantity']
-            else:
-                shopping_dict = {
-                    'name':ingredient['name'],
-                    'quantity': ingredient['quantity'],
-                    'measurement': ingredient['measurement']
-                }
-        else:
-            shopping_dict = {
-                    'name':ingredient['name'],
-                    'quantity': ingredient['quantity'],
-                    'measurement': ingredient['measurement']
-                }
-        ingredient_list.append(shopping_dict)
+    # Collect ingredients, update shopping list and categorize ingredients
+    ingredients = collect_ingredients(global_menu)
+    ingredient_list = update_shopping_list(ingredients)
+    categorized_ingredients = categorize_ingredients(ingredient_list)
 
-    categorized_ingredients = {category: [] for category in CATEGORIES.keys()}
-    categorized_ingredients["Uncategorized"] = []  # For unknown ingredients
-
-    def singularize(word):
-        """Convert plural words to singular (basic approach)."""
-        if word.endswith("es"):  # Handle plural ending in "es" (e.g., tomatoes -> tomato)
-            return word[:-2]
-        if word.endswith("s") and not word.endswith("ss"):
-            # Handle regular plural (e.g., apples -> apple)
-            return word[:-1]
-        return word
-
-    def is_partial_match(ingredient_name, category_items):
-        """
-        Check if any category item appears as a substring in the ingredient name.
-        Also compares singular/plural forms.
-        """
-        words = ingredient_name.split()
-        words = [singularize(word) for word in words]  # Convert words to singular form
-
-        # Check for 'stock' in combination with meat names
-        meat_keywords = ["beef", "pork", "chicken"]
-        if any(meat in words for meat in meat_keywords) and "stock" in words:
-            return "Aisle Product"  # Special case for stock-related meat items
-
-        # Regular category matching logic
-        for item in category_items:
-            singular_item = singularize(item)  # Convert category item to singular form
-            if any(singular_item in word for word in words):
-                return category_items  # Return the matched category
-
-        return None  # If no match is found, return None
-
-    for ingredient in ingredient_list:
-        ingredient_name = ingredient["name"].lower()
-        categorized = False
-
-        # Check which category the ingredient belongs to (partial matching)
-        for category, items in CATEGORIES.items():
-            if is_partial_match(ingredient_name, items):
-                categorized_ingredients[category].append(ingredient)
-                categorized = True
-                break  # Stop checking once a match is found
-
-        # If no category matches, add to "Uncategorized"
-        if not categorized:
-            categorized_ingredients["Uncategorized"].append(ingredient)
-
+    # Render the template with the categorized ingredients
     return render_template('shopping_list.html', categorized_ingredients=categorized_ingredients)
+#     shopping_dict = {}  # Store ingredient quantities and measurements
+#     ingredients = []
+#     ingredient_list = []
+
+#     for recipe in global_menu:
+#         for ingredient in recipe.get("ingredients"):  # Directly access ingredients
+#             raw_name = ingredient["name"].lower()
+#             measurement = ingredient["measurement"]
+#             quantity = ingredient["quantity"]
+#             cleaned_name = clean_ingredient_name(raw_name)
+#             # print(cleaned_name)
+#             ingredients.append({
+#                 'name': cleaned_name,
+#                 'measurement' : measurement,
+#                 'quantity' : quantity
+#             })
+
+# # Check if ingredient already exists
+#     for ingredient in ingredients:
+#         if ingredient['name'] in ingredient_list:
+#             if shopping_dict['cleaned_name']['measurement'] == ingredient['measurement']:
+#                 shopping_dict['cleaned_name']['measurement'] += ingredient['quantity']
+#             else:
+#                 shopping_dict = {
+#                     'name':ingredient['name'],
+#                     'quantity': ingredient['quantity'],
+#                     'measurement': ingredient['measurement']
+#                 }
+#         else:
+#             shopping_dict = {
+#                     'name':ingredient['name'],
+#                     'quantity': ingredient['quantity'],
+#                     'measurement': ingredient['measurement']
+#                 }
+#         ingredient_list.append(shopping_dict)
+
+#     categorized_ingredients = {category: [] for category in CATEGORIES.keys()}
+#     categorized_ingredients["Uncategorized"] = []  # For unknown ingredients
+
+#     def singularize(word):
+#         """Convert plural words to singular (basic approach)."""
+#         if word.endswith("es"):  # Handle plural ending in "es" (e.g., tomatoes -> tomato)
+#             return word[:-2]
+#         if word.endswith("s") and not word.endswith("ss"):
+#             # Handle regular plural (e.g., apples -> apple)
+#             return word[:-1]
+#         return word
+
+#     def is_partial_match(ingredient_name, category_items):
+#         """
+#         Check if any category item appears as a substring in the ingredient name.
+#         Also compares singular/plural forms.
+#         """
+#         words = ingredient_name.split()
+#         words = [singularize(word) for word in words]  # Convert words to singular form
+
+#         # Check for 'stock' in combination with meat names
+#         meat_keywords = ["beef", "pork", "chicken"]
+#         if any(meat in words for meat in meat_keywords) and "stock" in words:
+#             return "Aisle Product"  # Special case for stock-related meat items
+
+#         # Regular category matching logic
+#         for item in category_items:
+#             singular_item = singularize(item)  # Convert category item to singular form
+#             if any(singular_item in word for word in words):
+#                 return category_items  # Return the matched category
+
+#         return None  # If no match is found, return None
+
+#     def categorize_ingredients(ingredient_list):
+#         for ingredient in ingredient_list:
+#             ingredient_name = ingredient["name"].lower()
+#             categorized = False
+
+#             # Check which category the ingredient belongs to (partial matching)
+#             for category, items in CATEGORIES.items():
+#                 if is_partial_match(ingredient_name, items):
+#                     categorized_ingredients[category].append(ingredient)
+#                     categorized = True
+#                     break  # Stop checking once a match is found
+
+#             # If no category matches, add to "Uncategorized"
+#             if not categorized:
+#                 categorized_ingredients["Uncategorized"].append(ingredient)
+
+#     return render_template('shopping_list.html', categorized_ingredients=categorized_ingredients)
 
 
 def process_webform(webform_text):
