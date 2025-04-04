@@ -12,10 +12,21 @@
             <div class="card-header">Shopping list</div>
             <div class="card-body text-secondary">
                 <h1>Shopping List</h1>
-                <ol class="list-group">
-                {% for item in shopping_list %}
-                <li class="list-group-item">{{ item.quantity }} {{ item.name }}</li>
-                {% endfor %}
+                <br>
+                <div class="categories category-header">
+                    {% for category, items in categorized_ingredients.items() %}
+                        <h3>{{ category }}</h3>
+                        {% if items %}
+                            <ol class="list-group">
+                                {% for item in items %}
+                                    <li class="list-group-item">{{ item['quantity'] }} {{ item['measurement'] }} {{ item['name'] }}</li>
+                                {% endfor %}
+                            </ol>
+                        {% else %}
+                            <p>No items in this category.</p>
+                        {% endif %}
+                    {% endfor %}
+                </div>
                 </ol>
             </div>
             </div>
